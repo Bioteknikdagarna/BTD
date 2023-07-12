@@ -50,6 +50,13 @@ nav li a:hover {
     background-color: #13698A;
 }
 
+nav h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
 .gigacontainer {
     width: 100%;
     background-color: #f2f2f2;
@@ -76,16 +83,18 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 1em;
+    font-size: 2.2em;
 }
 
 h2 {
     text-align: center;
     margin: 0;
     padding: 1em;
+    font-size: 1.8em;
 }
 
 .gallery {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     width: 100%;
     background-color: #fff;
 }
@@ -133,8 +142,6 @@ h2 {
     height: 6em;
 }
 
-
-
 .center {
     display: block;
     margin: 0 auto;
@@ -143,10 +150,15 @@ h2 {
 
 .right {
     float: right;
-    width: 50%;
-    padding-left: 10px;
+    width: 30%;
+    padding: 100px 0;
 }
 
+.left {
+    float: left;
+    width: 30%;
+    padding: 0;
+}
 
 .centerp {
     text-align: center;
@@ -191,7 +203,7 @@ h2 {
 }
 
 .blue {
-    background-color: #ffffd8;
+    background-color: #13698A;
 }
 
 .green {
@@ -211,11 +223,16 @@ h2 {
     padding: 5em 0;
 }
 
-.footer {
+footer {
     background-color: #189BCC;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer img {
+    width: 200px;
+    height: auto;
 }
 
 
