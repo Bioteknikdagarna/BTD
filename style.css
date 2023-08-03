@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #189BCC;
+    background-color: var(--maintheme);
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -26,7 +26,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #189BCC;
+    background-color: var(--maintheme);
 }
 
 nav ul {
@@ -52,11 +52,11 @@ nav li a {
 }
 
 nav li a.selected {
-    background-color: #13698A;
+    background-color: var(--nav);
 }
 
 nav li a:hover {
-    background-color: #13698A;
+    background-color: var(--nav);
 }
 
 nav h1 {
@@ -68,8 +68,7 @@ nav h1 {
 
 .gigacontainer {
     width: 100%;
-    background-color: #f2f2f2;
-    /* background-color: #fafafa; */
+    background-color: var(--background);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,7 +107,6 @@ h3 {
     margin: 0;
     padding: 1em;
     font-size: 1.3em;
-
 }
 
 p {
@@ -123,7 +121,6 @@ p {
 
 
 .gallery {
-    /* border: 1px solid #ccc; */
     width: 100%;
 }
 
@@ -131,12 +128,6 @@ p {
 .gallery-wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 10px;
-}
-
-.gallery-wrapper2 {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-gap: 10px;
 }
 
@@ -159,6 +150,7 @@ p {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
 
 .desc {
     padding: 20px;
@@ -208,19 +200,16 @@ p {
     height: 100%;
 }
 
-.teal {
-    /* background-color: #e0fefe; */
-    background-color: #fff;
+.heading {
+    background-color: var(--heading);
 }
 
-.purple {
-    /* background-color: #d3eeff; */
-    /* background-color: #c9e4ce; */
-    background-color: #dbede2;
+.theme {
+    background-color: var(--theme);
 }
 
 footer {
-    background-color: #189BCC;
+    background-color: var(--maintheme);
     color: white;
     text-align: center;
     padding: 10px;
@@ -254,10 +243,6 @@ footer a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .gallery-wrapper2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
@@ -265,6 +250,8 @@ footer a {
     .box {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+
 
     .low {
         height: 8em;
