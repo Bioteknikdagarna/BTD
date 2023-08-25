@@ -237,6 +237,7 @@ footer a {
 
 
 @media screen and (max-width: 700px) {
+    
     nav {
         flex-direction: column;
     }
@@ -255,12 +256,14 @@ footer a {
 
     .box img {
         order: -1;
+        width: 355px;
+        height: 236.66px;
+        object-fit: cover;   
     }
 
     .box .groupimg {
         order: -1;
     }
-
 
     .low {
         height: 8em;
@@ -275,5 +278,5 @@ footer a {
     }
 
 
-    
+
 }
