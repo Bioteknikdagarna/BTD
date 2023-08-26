@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/btdfavicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+
+.resp-container {
+    position: relative;
+    
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+   position:absolute;
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+.navbar{
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index:2;
+    
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+.textbox {
+    display: flex;
+    position:relative;
+    z-index:-1;
+    width:50%;
+    margin:auto;
+    padding:0px 0px;
+    border: 5px solid transparent;
+    background-color: #ffffff;
+    
+  }
+@media screen and (max-width: 1200px) {
+  .textbox {
+    
+    width:90%;
+   
+  }
+}
+.title {
+    position:relative;
+    line-height: normal;
+    font-size: 1.8vw;
+    padding:0px 0px;
+    text-align:center;
+    color:#009688
+  
+}
+@media screen and (max-width: 1200px) {
+  .title {
+  
+    font-size: 3.5vw;
+  }
+}
+
+.info{
+    position:relative;
+    text-align:left;
+    font-size: 1vw;
+    margin: 1vw;
+    text-align:center;
+  
+}
+@media screen and (max-width: 1200px) {
+  .info {
+  text-align:center;
+    font-size: 1.6vw;
+  }
+}
+.halva{
+   width:50%;
+  
+}
+</style>
+<body>
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Nyheter</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="massa.html" class="navbaritem">Mässa</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+	<a href="studiebesok.html" class="navbaritem">Studiebesök</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Lund</a>
+	<a href="studentlivilund.html" class="navbaritem ">Studentliv i Lund</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Nyheter</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="massa.html" class="navmenuitem">Mässa</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+	<a href="studiebesok.html" class="navmenuitem">Studiebesök</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Lund</a>
+	<a href="studentlivilund.html" class="navmenuitem">Studentliv i Lund</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+
+
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+    <h1>Hitta till kemicentrum</h1>
+  <div class="w3-content">
+    <div class="w3center resp-container">
+      <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.452101519437!2d13.207875116087662!3d55.715894902305166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46539634d3eb8045%3A0x1ff11cc84f503e90!2sKemicentrum!5e0!3m2!1ssv!2sse!4v1569486705622!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;z-index:1" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class=" w3-center">
+      <h1>Hitta på kemicentrum</h1>
+	  <img src="img/kc.png" style="width:100%">
+
+	<!--  <img src="img/kcvån0.png" style="width:70%" class = "w3-hide-large w3-hide-medium">
+
+	  <img src="img/kcvån0.png" style="width:70%" class = "w3-hide-small w3-hide-large"> -->
+    
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="textbox">
+  <div class="halva">
+      <p class="title">Adresser</p>
+      
+      <p class="info"> Fäladsgården: Svenshögsvägen 25A<br><br>
+Lophtet: Getingevägen 66<br><br>
+Kemicentrum: Naturvetarvägen 14<br><br>
+Elite Hotel Ideon: Scheelevägen 23<br><br>
+Gasquesalen: John Ericssons väg 3<br><br>
+E-huset: Ole Römers väg 3<br><br>
+Hallands Nation: Thomanders väg 1<br><br>
+Västgöta Nation: Tornavägen 17-19<br><br>
+
+  </div>
+  <div class="halva">
+      <p class="title">Några cirkatider för gång
+mellan dem olika platserna</p>
+      
+      <p class="info"> Kemicentrum -> E-huset: 8 minuter<br><br>
+Elite Hotel Ideon -> Fäladsgården: 20 minuter<br><br>
+Fäladsgården -> Gasquesalen: 25 minuter<br><br>
+Västgöta Nation -> Elite Hotel Ideon: 20 minuter<br><br>
+Hallands Nation -> Fäladsgården: 30 minuter<br><br>
+
+  </div>
+</div>
+<!--
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+    <h1>Hitta från kemicentrum till E-huset</h1>
+  <div class="w3-content">
+    <div class="w3center resp-container">
+      
+	  <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4495.18468197362!2d13.206093977975492!3d55.71345747217121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x46539634d3eb8045%3A0x1ff11cc84f503e90!2sKemicentrum%2C%20S%C3%B6lvegatan%2039%2C%20223%2062%20Lund!3m2!1d55.715891899999995!2d13.210063799999999!4m5!1s0x465397ca15b4d245%3A0xb97d004813c5f77c!2sE-huset%2C%20Lund!3m2!1d55.7110232!2d13.210303399999999!5e0!3m2!1ssv!2sse!4v1569237300671!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+ <img class="w3-hide-small"style="width:50%" src="../img/sick.gif">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/sick.gif">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

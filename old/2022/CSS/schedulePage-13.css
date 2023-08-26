@@ -1,0 +1,150 @@
+#SchedulePageContainer {
+    width : 100%;
+    height : 90%;
+    padding-top : 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ScheduleContainerBox {
+    height : 90%;
+    max-width : 100vh;
+    margin : 0 auto;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#timeStampsColumn {
+    width : 64px;
+    display : flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.timeStampRow {
+    flex-grow: 1;
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    color : #7fd15ca0;
+    vertical-align: middle;
+}
+.timeStampRow > h4 {
+    margin : 0;
+    padding : 0;
+    text-align: left;
+    font-size : 1.5vh;
+}
+
+.dayColumn {
+    flex-grow: 2;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-evenly;
+}
+.dayColumnHeader {
+    height : 6vh;
+    line-height : 4vh;
+    font-size : 2vh;
+    text-align : center;
+    color : #7fd15ca0;
+    border-radius: 5px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+.dayColumnBlockContainer {
+    position : relative;
+    width : 100%;
+    flex-grow : 1;
+}
+
+.dayDivider {
+    width : 5px;
+    box-shadow : 0 0 -10px #509350a0;
+}
+.hourDivider {
+    z-index : -1;
+    background : #7fd15c20;
+    position : absolute;
+    left : -2.5px;
+    right : -2.5px;
+    height : 2px;
+}
+
+.timeBlock {
+    position : absolute;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius : 5px;
+    /* color: rgb(239, 255, 239); */
+}
+.timeBlock:nth-of-type(2n+1) {
+    color : #7fd15c;
+    background-color : #509350a0;
+    box-shadow : 0 0 3px #509350a0;
+}
+.timeBlock:nth-of-type(2n+1).active {
+    background-color : #509350;
+    box-shadow : 0 0 3px #509350;
+}
+.timeBlock:nth-of-type(2n) {
+    color : #3a693a;
+    background-color : #7fd15ca0;
+    box-shadow : 0 0 3px #7fd15ca0;
+}
+.timeBlock:nth-of-type(2n).active {
+    background-color : #7fd15c;
+    box-shadow : 0 0 3px #7fd15c;
+}
+.timeBlock:not(.active):hover {
+    filter: brightness(1.2);
+}
+
+.timeBlock > h3, .timeBlock > h4, .timeBlock > p {
+    padding-left: 3%;
+    padding-right: 3%;
+    /* margin-block: 0; */
+    line-break: normal;
+}
+.timeBlock > h3 {
+    line-height: 100%;
+    font-size: 80%;
+}
+.timeBlock > h4 {
+    display: none;
+    line-height: 100%;
+    font-size: 80%;
+}
+.timeBlock > p {
+    display: none;
+    line-height: 100%;
+    font-size: 60%;
+}
+.timeBlock.active {
+    bottom : auto !important;
+    height : auto !important;
+    z-index : 10;
+    filter : opacity(10.0);
+}
+.timeBlock.active > h4 {
+    display: block;
+}
+.timeBlock.active > p {
+    display: block;
+}
+
+
+
+/* .timeBlock:nth-of-type(3n) {
+    background-color : #ff606060;
+}
+.timeBlock:nth-of-type(3n+1) {
+    background-color : #60ff6060;
+}
+.timeBlock:nth-of-type(3n+2) {
+    background-color : #e0e06060;
+} */

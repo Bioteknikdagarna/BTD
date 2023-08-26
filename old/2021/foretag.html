@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,top-left-text,top-right-text {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.ffont{
+    font-size:36px
+}
+.ffont:link {
+  color: #389466;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ffont:visited {
+  color: #7ecea6;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ffont:hover {
+  color: #2a6f4d;
+  background-color: transparent;
+  text-decoration: underline;
+  
+}
+.ffont:active {
+  color: #389466;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.imgc {
+  
+  padding: 5px;
+  height:90%;
+   border-radius: 25px;
+  background-color: rgba(0, 150, 136,1);
+}
+
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index:1;
+    
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+
+.imgsl {vertical-align: center;
+object-fit:cover;
+    max-width:100%;
+    display:block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height:400px;
+  text-align:center;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-right:-27px;
+      right:100%;
+
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.top-left-text{
+    font-family: "Lato", sans-serif;
+    position: absolute;
+  top: 64px;
+  left: 64px;
+  right:448px;
+}
+
+.top-right-text{
+    font-family: "Lato", sans-serif;
+    position: absolute;
+  top: 64px;
+  left:448px;
+  right:64px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="foretag.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="foretag-mobil.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1> Företagsmässan Genvägen </h1>
+      <br>
+       <h4> Fredagen den 26:e november hålls företagsmässan genvägen i samband med bioteknikdagarna. Under förmiddagen kommer ni få möjlighet att träffa företagsrepresentanter som är intresserade av just bioteknikstudenter! Denna sida kommer att uppdateras med företag i och med att vi blir färdiga med signerandet. </h4>
+       <br>
+    </div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-center">
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+    
+<h2 style="color:green"><a style="text-decoration:none" href="https://www.nordicbiomarker.com/">Nordic Biomarker</a></h2>
+<div class="slideshow-container">
+  <div class="mySlides1 fade">
+    <div class="imgsl" align="left"><img src="img/NordicBiomarker.svg" style="width:400px"></div>
+    <div class="imgsl" align="left"><img src="img/NordicBiomarker7.png" style="height:250px"></div>
+    <div class="top-right-text">Nordic Biomarker utvecklar och tillverkar ett växande sortiment av reagenser för koagulationsdiagnostik, både klotting-tester, kromogena tester och latex immunoassays. Med omkring 60 anställda i Linköping, Nyköping, Stockholm, Umeå och Beijing arbetar de för att bli världsledande inom säker koagulationsdiagnostik. Nordic Biomarker är redan i dag den största oberoende tillverkaren av koagulationsreagenser, men har flera spännande och än så länge lite hemliga projekt på gång för att bredda sig ännu mer. Företaget har kunder över hela världen, med Kina som största marknad.
+    <br>
+    I år är Nordic Biomarker en av huvudsponsorerna till Bioteknikdagarna och deltar också på Genvägen. Kolla in Nordic Biomarker på <a href="https://www.nordicbiomarker.com/">nordicbiomarker.com</a> och skriv gärna till info@nordicbiomarker.com om du är nyfiken på något särskilt. </div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <div id="imgsl w3-left-padding-320" align="right"><img src="img/NordicBiomarker8.png" style="height:400px"></div>
+    <div class="top-left-text">Många anställda kommer direkt från en examen i bioteknik eller kemisk biologi. Som anställd här kan du arbeta med exempelvis cellodling, biokemisk beredning, fyllning, frystorkning, FoU, processutveckling, kvalitetskontroll och regulatoriska frågor. Företaget lägger stor vikt vid medarbetarnas utveckling och prioriterar utbildning, hälsa och trivselaktiviteter som stärker sammanhållningen. </div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <div id="imgsl w3-right-padding-320" align="left"><img src="img/NordicBiomarker2.jpg" style="height:100%; max-height:400px"></div>
+    <div class="top-right-text">Koagulationsdiagnostik spelar en viktig roll i många människors liv. Ett av de första testerna som togs på dig som nyfödd, PK-testet, undersökte om din koagulation var lagom snabb. Sedan dess har du säkert stött på flera andra typer av koagulationstester – kanske känner du någon som har utretts för blodpropp, eller någon som måste gå på regelbundna kontroller för att justera sin Waran-behandling. I takt med att allt fler i världen får tillgång till säker och modern sjukvård kan koagulationstester hjälpa fler människor till ett längre och friskare liv.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div> 
+</div>
+</div>
+<br>
+<div class="w3-main w3-content w3-center">
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+    
+<h2 style="color:green"><a style="text-decoration:none" href="https://triathlon.se/healthtech/">Triathlon Group</a></h2>
+
+<div class="slideshow-container">
+  <div class="mySlides2 fade">
+      <div id= "imgsl w3-left-padding-320" align="right">
+    <br><br><br><br><br><img src="img/Triathlon Logo.png" style="width: 400px"></div>
+    <div class="top-left-text">Triathlon HealthTech är en managementkonsultfirma dedikerad till att hjälpa innovatörer, startups och globala life science-bolag att bidra till framtidens hälso- och sjukvård. Vi tillhandahåller expertkunskap, analyser och implementerar bestående förändringar inom området HealthTech. <br><br> På Triathlon HealthTech arbetar du i gränslandet mellan teknologi, affärsutveckling och regulatoriska frågor över hela Life Science-spektrumet, inklusive medicinsk utrustning, diagnostik, läkemedel och connected health.</div>
+  </div>
+
+  <div class="mySlides2 fade">
+      <div id= "imgsl w3-padding-128" align="left">
+    <img src="img/Triathlon3.png" style="width:400px"></div>
+    <div class="top-right-text">Som en del av Triathlon HealthTech kommer du att ingå i ett ungt och tvärfunktionellt team som är starkt engagerade i att göra bestående skillnad i en spännande och utmanande arbetsmiljö. <br><br> Läs mer om oss på <a href="https://triathlon.se/healthtech/">triathlon.se/healthtech.</a> Vi söker kontinuerligt efter nya talanger till vårt huvudkontor i Göteborg. Ansök gärna nu på recruitment@triathlon.se <br><br> Vi ser fram emot att träffa dig på Bioteknikdagarna! <br><br> I år är Triathlon Group en av huvudsponsorerna till Bioteknikdagarna.</div>
+  </div>
+
+
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div> 
+</div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: white;">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+		    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.arla.com/">
+<br><br><br><img border="0" alt="W3Schools" src="img/Arla logga.jpg" style="width:100%;" >
+</a></p>  
+</div>
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.arla.com/" >Arla Foods</a>
+	            <h4></h4>
+                <p> Arla Foods är ett bondeägt kooperativt och ägs av ca 2400 mjölkbönder i Sverige och totalt ca 9400 bönder i norra Europa. Vår vision är att skapa framtiden inom mejeri för att sprida hälsa och inspiration i världen, helt naturligt. 
+<br><br>
+Mejeriet i Linköping är Arlas största specialmejeri i Norden och har 21 olika förpackningslinjer. Vi producerar 225 miljoner kg mejeriprodukter per år. Vi är ett specialmejeri som tillverkar yoghurt, matlagningsprodukter, laktosfria produkter både som egna varumärken men även private label, främst på mjölk från Östgötska gårdar. Varje år lanseras vi i Linköping ca 40-50 nya produkter. 
+<br><br>
+Laboratoriet är en del av QEHS-avdelningen. Tillsammans arbetar vi för att anläggningen ska ligga i framkant och livsmedelsäkerhet och produktkvalitet prioriteras väldigt högt. Här jobbar vi med analyser inom mikrobiologi samt kemi och kvalitetsfrågor som kvalitetssäkring av färdig produkt samt av omgivningen och processen. </p>
+            </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.zozium.se/" >Zozium</a>
+	            <h4></h4>
+                <p>Zozium är ett konsultföretag med specialistkompetens inom ledarskap, projektledning, kvalitetssäkring, validering och processteknik – främst inom life science. Namnet kommer ifrån latinets socium som betyder partnerskap.<br><br>  Zozium utvecklar sina kunder och företaget med hjälp av starka partnerskap och arbetsmetoder inspirerade av teal-principen. Det betyder bland annat att organisationen är "platt" och de arbetar i självutvecklande team skapade utifrån identifierade behov och frågeställningar. Vidare innebär det också att de tillsammans tagit fram en egen utvecklingsmodell. Modellen innehåller ett antal roller med olika ansvar och förväntningar kopplade till sig. Den bygger på att ju mer var och en av utvecklas, desto större ansvar kan och förväntas ta. Det i sin tur innebär att varje medarbetares förmågor kontinuerligt utvecklas och växer.<br><br>  Från början har du som nyexad ansvar för att utveckla dig själv. Och i takt med att du växer i din roll får du även ansvar för att utveckla Zoziums partners, team och strategier. På så sätt växer alla med sina uppgifter och utvecklar sig själva, företaget och varandra.  <br><br> 
+               <a href="https://www.zozium.se/#:~:text=Se%20filmen%20om%20Teal%20organisationer"> Klicka här</a> för att se filmen om Teal organisationer
+</p>
+            </div>
+					    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.zozium.se/">
+<br><br><br><br><br><img border="0" alt="W3Schools" src="img/Zozium2_logo.svg" style="width:100%;" >
+</a></p>  
+</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: white;">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+		    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.element.com/se">
+<br><br><br><br><br><br><img border="0" alt="W3Schools" src="img/Element logo.jpg" style="width:100%;" >
+</a></p>  
+</div>
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.element.com/se" >Element</a>
+	            <h4></h4>
+                <p>Element erbjuder materialtekniska tjänster med expertis inom metalliska material, polymerer, komposit, ytteknik, drivmedel och smörjmedel. 
+<br><br>
+Vi erbjuder stöd i materialvalsfrågor och utför provning, analys och tekniska utredningar inom en mängd olika områden för att säkerställa rätt materialegenskaper och livslängd. Vi arbetar också med kemiska arbetsmiljörisker. 
+<br><br>
+I Sverige är vi ca 300 materialtekniker, kemister och mättekniker inom olika specialistområden på 10 orter och med huvudkontor i Linköping. Vår kalibreringsverksamhet Element Metech utför kalibrering av mätinstrument inom ett mycket brett område.  
+<br><br>
+Element är en av världens främsta leverantörer av oberoende tjänster inom materialteknik och mätteknik. Våra kunder finns inom ﬂyg, försvar, energi, fordonsindustri, medicinteknik m.m. </p>
+            </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.sverigesingenjorer.se/bli-medlem/?gclid=CjwKCAiA7dKMBhBCEiwAO_crFAbBwBsypOsUwcTVDBdJCww4cZUMG1sJtt3chz_QQ2Drg6sJ4TLiiRoCnkAQAvD_BwE" >Sveriges Ingenjörer</a>
+	            <h4></h4>
+                <p>Starta ditt liv som ingenjör med oss!  
+<br><br>
+Sveriges Ingenjörer är ett fackförbund för dig som studerar till eller arbetar som ingenjör. Vi stöttar dig redan under studietiden och förbereder dig för din framtida karriär som ingenjör.   
+<br><br>
+För endast 15:-/mån får du förmånliga försäkringar, tillgång till stipendier, ett oslagbart nätverk och rådgivning. Du får även tillgång till Ny Tekniks digitala premiumtjänst, där du kan läsa om det senaste inom innovation, teknik och entreprenörskap.  
+<br><br>
+Medan du fokuserar på dina studier, fokuserar vi på dig. Bli medlem idag. 
+</p>
+            </div>
+					    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.sverigesingenjorer.se/bli-medlem/?gclid=CjwKCAiA7dKMBhBCEiwAO_crFAbBwBsypOsUwcTVDBdJCww4cZUMG1sJtt3chz_QQ2Drg6sJ4TLiiRoCnkAQAvD_BwE">
+<img border="0" alt="W3Schools" src="img/sveing.png" style="width:100%;" >
+</a></p>  
+</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: white;">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+		    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.octapharma.se/">
+<br><br><br><br><br><br><img border="0" alt="W3Schools" src="img/octa_logoblue.jpg" style="width:100%;" >
+</a></p>  
+</div>
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.octapharma.se/" >Octapharma</a>
+	            <h4></h4>
+                <p>Octapharma är ett familjeföretag som tar de bästa delarna av en familj – som gemenskap och teamwork – och mixar det med framgångsrecept för ett bra företag – som framåtanda, professionalism och utveckling. Med en synlig ledning där besluten tas snabbt men där strategin är långsiktig. Det är ett riktigt familjeföretag för oss. 
+<br><br>
+Sedan starten 1983 är Octapharma idag ett globalt läkemedelsföretag med huvudkontor i Lachen i Schweiz. Våra produkter finns i 118 länder och når ut till hundratusentals patienter årligen. Vi fokuserar på tre behandlingsområden: hematologi, immunterapi och intensivvård. 
+<br><br>
+Octapharma är det största privatägda och fristående företaget i världen inom plasmafraktionering. Vi utvecklar och tillverkar läkemedel av human plasma som kommer från våra egna plasmagivningscenter och från externa leverantörer och utvecklar även humant protein från humana cellinjer. </p>
+            </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1> Övriga Sponsorer </h1>
+      <h4> Här är de övriga företagen som sponsrar bioteknikdagarna i år! </h4>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.randstad.se/?gclid=CjwKCAjwwsmLBhACEiwANq-tXAXpBB2aFjizi7Up2LsMVR6FnZiOSX9qB9qts5kcKH3raW1H0B4J3RoCgdcQAvD_BwE" >Randstad</a>
+	            <h4></h4>
+                <p> Randstad life Sciences & Engineering är globalt ledande inom HR-tjänster med ett väletablerat nätverk i industrin. Vi arbetar med seniora, liksom juniora kompetenser, och erbjuder även examensarbeten och sommarjobb. Med en trygg anställning och stöttande konsultchefer hjälper vi dig till nästa utmaning, gång på gång, och ser till att du får den kompetensutveckling som du söker. Att jobba som konsult med uppdrag av varierande tidsperioder och möjligheten att jobba på olika företag är ett oslagbart sätt att bygga ett starkt CV och bli eftertraktad i industrin. Vi är kunniga karriärskompass i ett stort nätverk. Genom att kombinera vår passion för människor med kraften i dagens teknologi hjälper vi människor och organisationer att nå deras sanna potential. Vi kallar det Human Forward. </p>
+            </div>
+    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.randstad.se/?gclid=CjwKCAjwwsmLBhACEiwANq-tXAXpBB2aFjizi7Up2LsMVR6FnZiOSX9qB9qts5kcKH3raW1H0B4J3RoCgdcQAvD_BwE">
+<br><br><br><br><img border="0" alt="W3Schools" src="img/Randstad logo_main.png" style="width:100%;" >
+</a></p>  
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: white;">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    
+		    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.smileincubator.life/">
+<br><br><br><img border="0" alt="W3Schools" src="img/SmiLelogga.png" style="max-height: 300px;" >
+</a></p>  
+</div>
+
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.smileincubator.life/" >SmiLe</a>
+	            <h4></h4>
+                <p><br><br>SmiLe är en företagsinkubator som ger entreprenörer och startups möjlighet att kommersialisera och utveckla innovationer inom life science. 
+<br><br>
+Du som är intresserad kan lära dig grunderna i life science-entreprenörskap genom att du gå vårt 8-veckors e-Campus-program. Är du entreprenör i tidigt skede och vill omvandla din affärsidé till skalbar verksamhet, ansök till vår 10-veckors Bootcamp, vårt intensiva affärsutvecklingsprogram. Du som är redo att ta nästa steg kan utveckla ditt företag under 2-4 år i SmiLes inkubatorprogram. 
+<br><br>
+SmiLe Incubator ger dig tillgång till den expertis du behöver. Du blir en del av en life science-gemenskap som hjälper dig att utveckla, verifiera och växa vidare. Du får tillgång till våra labb och nätverk för att driva ditt företag framåt. </p>
+            </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-green ffont" style="text-decoration:none" href="https://www.biototal.se/" >Biototal</a>
+	            <h4></h4>
+                <p>Biototal Norden är ett ledande företag på att utveckla ekonomiska värden och miljönytta ur olika bi- och restprodukter samt möjliggöra långsiktigt hållbara kretslopp mellan stad, land och hav. Ett innovativt bolag som arbetar med att utveckla framtidens effektiva systemlösningar. Medarbetarna är bolagets främst resurs och med olika bakgrunder och kompetenser arbetar de tillsammans för att kunna återföra fler restprodukter, bland annat genom att utveckla nya produkter till fler målgrupper.  
+ <br><br>
+När Biototal Norden grundades 2006 var målet att kunden ska ha stort inflytande och att de samtidigt ska ha kul på vägen – tankar som än idag genomsyrar företaget.  
+  <br><br>
+Just nu är Biototal mitt i en spännande tillväxtresa och söker därför nya talanger som vill vara med och bidra till en långsiktigt hållbar framtid.  
+ Läs mer: <a href="https://www.biototal.se/">biototal.se</a></p>
+            </div>
+    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(0, 0, 0,0);"> <a  href="https://www.biototal.se/">
+<br><br><br><br><br><br><img border="0" alt="W3Schools" src="img/Biototal_loggo.jpg" style="width:100%;" >
+</a></p>  
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+<img class="w3-hide-small" style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

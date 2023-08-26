@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/btdfavicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-padding-large w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large ">Hem</a>
+	<a href="nyheter.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Nyheter</a>
+	<a href="schema.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small w3-hide-medium">Schema</a>
+    <a href="massa.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Mässa</a>
+    <a href="forelasare.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Föreläsare</a>
+	<a href="studiebesok.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Studiebesök</a>
+    <a href="hittailund.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Hitta i Linköping</a>
+	<a href="studentlivilund.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Studentliv i Linköping</a>
+	<a href="omoss.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-large">
+	<a href="nyheter.html" class="w3-bar-item w3-button w3-padding-large">Nyheter</a>
+	<a href="schema.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Schema</a>
+    <a href="massa.html" class="w3-bar-item w3-button w3-padding-large">Mässa</a>
+    <a href="forelasare.html" class="w3-bar-item w3-button w3-padding-large ">Föreläsare</a>
+	<a href="studiebesok.html" class="w3-bar-item w3-button w3-padding-large ">Studiebesök</a>
+    <a href="hittailund.html" class="w3-bar-item w3-button w3-padding-large">Hitta i Linköping</a>
+	<a href="studentlivilund.html" class="w3-bar-item w3-button w3-padding-large">Studentliv i Linköping</a>
+	<a href="omoss.html" class="w3-bar-item w3-button w3-padding-large">Om oss</a>
+  </div>
+</div>
+
+
+
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1>Schema kommer</h1>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid 
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class=" w3-center">
+      <h1>Schema saknas</h1>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

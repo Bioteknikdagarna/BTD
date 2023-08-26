@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.navbar{
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index:2;
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    z-index:2;
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+
+.fa-facebook-square {
+  background: white;
+  color: #4C8D2B;
+}
+
+.fa-instagram {
+  background: white;
+  color: #4C8D2B;
+}
+
+.textbox {
+    position:relative;
+   
+    width:50%;
+    margin:auto;
+    padding:0px 0px;
+    border: 5px solid transparent;
+    background-color: #f1f1f1;
+    margin-top:30px;
+    
+  }
+@media screen and (max-width: 1200px) {
+  .textbox {
+    
+    width:90%;
+   
+  }
+}
+.title {
+    position:relative;
+    line-height: normal;
+    font-size: 1.8vw;
+    padding:0px 0px;
+    text-align:center;
+    color:#009688
+  
+}
+@media screen and (max-width: 1200px) {
+  .title {
+  
+    font-size: 3.5vw;
+  }
+}
+
+.info{
+    position:relative;
+    text-align:left;
+    font-size: 1vw;
+    margin: 1vw;
+  
+}
+@media screen and (max-width: 1200px) {
+  .info {
+  text-align:center;
+    font-size: 1.6vw;
+  }
+}
+.link{
+    text-align:center;
+    color:green;
+}
+
+@media screen and (max-width 1200px){
+    .link{
+    text-align:center;
+    color:green;
+    
+}}
+
+</style>
+<body>
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="foretag.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="foretag-mobil.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1> Information </h1>
+     <div class="w3-opacity">
+    <h4> Håll koll på den här sidan! När BTD närmar sig kommer viktig information att läggas upp här.</h4>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>26/11:</h4>
+      </div>
+    <div class="w3center">
+      <h3>Fredagsinfo</h3>
+      </div>
+      <h4>Här kommer lite nyttig information för dagen, trevlig läsning!<br>
+Ni måste checka ut från hotellet senast 9:45. Då går ni till campus och lämnar ert bagage i U3, samma sal som igår. Ta samma ingång som när ni skulle till intro-föreläsningen igår (finns utmärkt i info-bladet!), de andra är låsta.<br>
+Grupp 1 går sedan till Ledsna Flickan i A-huset där mässan Genvägen hålls (finns också utmärk i info-bladet och på hemsidan). Grupp 2 går till märkesbacken.
+Klockan 12:00 är det lunchföreläsning i A2 (ligger i anslutning till mässan). Självklart bjuder vi på lunch!
+Efter lunchen stannar grupp 2 på mässan och grupp 1 går ut till märkesbacken.<br>
+Ni som har privata samtal ansvarar själva för att hålla koll på tiden för dessa. På mässan kommer vi finnas tillgängliga för att hjälpa er att hitta! Är man i märkesbacken och ska på privat samtal får man alltså gå tillbaka till mässan så hjälper vi dig där.<br>
+Klockan 15 är det fikaföredrag i A2.<br>
+Efter fikaföredraget är det dags att ta sig till sovsalarna! Det gör man smidigast med buss. Sovsalarna öppnar ca 17 och maten på puben serveras 18:00 så här gäller det att vara lite snabb! Man kommer alltså inte hinna packa upp och pumpa luftmadrass, utan bara lämna sin packning i rätt sovsal.
+Puben börjar 18 :00 och hålls på [hg] i Ryd, hit tar man sig smidigast med buss (hållplats Ryd centrum, buss 3) från sovsalarna! Närmaste busshållplats från sovsalarna är Parkgatan. Om man bor kvar på hotellet är det gångavstånd till puben.<br>
+Som vanligt, fråga era BTS-reppar om något är oklart! Vi ses på mässan!
+</h4>
+    </div>
+  </div>
+  
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>26/11:</h4>
+      </div>
+    <div class="w3center">
+      <h3>Sovsalar</h3>
+      </div>
+      <h4>Ni kommer att få sova på folkungaskolan inatt fram till på söndag. För att hitta dit fungerar det att åka buss 3 från Solhaga (donkensidan) till parkgatan. Därefter använder ni er av google maps för att hitta folkungaskolan.<br>
+I vilka salar ni kommer sova hittar ni i ett exceldokument som publicerades på facebooksidan. Dessa salar bestämmer ni helt själva om ni vill byta runt i, det ända är att det inte får sova fler än 15 pers per sal på grund av brandrisk. <br>
+Ni kommer duscha på campushallen här på campus valla! Även den, som allt annat, går att google mapsa. Glöm inte hygienartiklar eller handduk!</h4>
+    </div>
+  </div>
+  
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>25/11:</h4>
+      </div>
+    <div class="w3center">
+      <h3>Nu kör vi igång!</h3>
+      </div>
+      <h4>Från 13:30 kommer vi att stå vid Blå Havet och möta upp er. För att hitta till Blå Havet kan man antingen google mapsa sig fram eller se vägbeskrivning i info-bladet.
+Ni som har packning med er kommer att få lämna den i vår garderob under intro-föreläsningen.<br>
+Efter föreläsningen får ni gå till hotellet och checka in! Där har ni lite tid att landa innan det är dags för fulvinsrunda!
+Vi kommer möta upp er igen vid 17:20 på Blå Havet och följa er till fulvinsrundan som kommer hållas bakom C-huset.
+Sedan är det fulsittning, mellanhäng och eftersläpp på Schlaget-kravallen! Kom ihåg biljett, leg och STUK-appen!!</h4>
+    </div>
+  </div>
+  
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>17/10:</h4>
+      </div>
+    <div class="w3center">
+      <h3>Sista chansen att anmäla sig!</h3>
+      </div>
+      <h4>Ikväll stängs anmälan vid kl 23:59. Om du har blivit erbjuden en plats på BTD kommer du få ett bekräftelsemejl på tisdag den 19:e oktober. Därefter har du tills den 22:a oktober kl 23:59 att betala och fylla i ytterligare ett formulär som bifogas i mejlet.</h4>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>11/10:</h4>
+      </div>
+    <div class="w3center">
+      <h3>Snart är det dags!! Här kommer anmälningslänkarna till Bioteknikdagarna 2021.</h3>
+      </div>
+      <h4>Anmälan öppnar vid 12:30 så var redo!! Länkarna är lärosätesspecifika, så se till att klicka på DITT LÄROSÄTES anmälningsformulär.
+    <br><br>
+    <div class="w3-text-green">
+    <a id="link" href="https://forms.gle/2u6aQXeULAXEJFqy9">Chalmers</a>
+    <br>
+    <a id="link" href="https://forms.gle/XYXyiZfU1guLLhDM7">Linköping</a>
+    <br>
+    <a id="link" href="https://forms.gle/BNebRk24WcUPw32x9">Lund</a>
+    <br>
+    <a id="link" href="https://forms.gle/iCPMdx7Vax3h4jFr7">Umeå</a>
+    <br>
+    <a id="link" href="https://forms.gle/24oQtKGjZoaaoD8t8">Uppsala</a>
+    <br>
+  </h4>
+    </div>
+    </div>
+    </div>  
+
+<div class="w3-row-padding w3-padding-32 w3-container w3-center">
+  <div class="w3-content">
+      <div class="w3-left-align w3-text-green">
+          <h4>8/10:</h4>
+      </div>
+    <div class="w3center">
+      <h3>💚Anmälan öppnar måndag 11 oktober kl. 12:30💚 </h3>
+      </div>
+      <h4>och görs via ett formulär som kommer att läggas upp under denna flik och även på facebook. Anmälningsperioden är sedan öppen till och med söndag 17 oktober kl. 23:59. Tisdag 19 oktober kommer alla som har anmält sig att få ett mail där man får veta om man har fått en plats eller inte. Om man har blivit erbjuden en plats har man fram till 22 oktober kl. 23:59 på sig att betala biljetten och fylla i ytterligare ett formulär som bifogas i mailet. 
+
+Observera att det kommer finnas olika anmälningsformulär, ett för varje lärosäte! Det är därför mycket viktigt att du fyller i rätt formulär, annars kan vi inte behandla din anmälan. </h4>
+    </div>
+  </div>
+</div>
+<!--
+<div class="textbox">
+  
+      <p class="title">Öppettider på skolan</p>
+      
+      <p class="info"> <a href="http://www.bioteknikdagarna.org/file/%C3%96ppettiderskolan.pdf" target="_blank">Här</a> är en PDF där ni kan se vilka tider som skolan kommer att vara öppen och en liten karta över var man går in.</p>
+     
+  
+</div> 
+-->
+<!--<div class="textbox">
+  
+      <p class="title">Välkomstinformation PDF</p>
+      
+      <p class="info"> <a href="https://www.bioteknikdagarna.org/file/Introduktions-PowerPoint.pdf" target="_blank">Här</a> kommer en PDF med lite bra info!</p>
+      <p class="info"> <br>Ni kan nu också se vilket studiebesök ni har blivit tilldelade på <a href="https://www.facebook.com/groups/1916751481760567/" target="_blank">facebook</a>.</p>
+    
+                            
+  
+</div> -->
+
+<!--
+<div class="textbox">
+  
+      <p class="title">Viktiga regler under BTD!!!</p>
+      
+      <p class="info"> Alla kvällsevent kommer att hållas i lokaler där
+                        serveringstillstånd gäller. Detta innebär att det är
+                        olagligt att ta med egen alkohol in på dessa event.<br><br>
+                        Om man mot förmodan blir påkommen med medhavd alkohol riskerar man att bli utslängd.
+                        På fredagens och lördagens boende på skolan Fäladgården råder totalt förbud mot att dricka
+                        alkohol.<br><br>
+                        På skolan kommer det finnas en del tider att
+                        förhålla sig till, för t.ex. duschtider och tider ni får
+                        vara inne på skolan. Information om dessa kommer att finnas på b.la. facebook. Dessa går inte att
+                        förändra. Ha koll på dessa tider för att förenkla för
+                        både oss och er.<br><br>
+                        På skolan kommer ni även att bli tilldelade klassrum. Respektera dessa då resterande rum kommer
+                        att vara larmade.<br><br>
+                        Se till att vara i tid på allt schemalagt.
+                        Ha alltid med gästleg, studentleg och eget leg</p>
+                            
+  
+</div>
+-->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ 
+ <div class="w3-xlarge w3-padding-32">
+    	<a href ="https://www.facebook.com/bioteknikdagarna2021">
+	    <i class="fa fa-facebook-square w3-hover-opacity w3-margin-right" style= "font-size:64px"></i></a>
+	<a href ="https://www.instagram.com/bioteknikdagarna2021/">
+	    <i class="fa fa-instagram w3-hover-opacity" style= "font-size:67px"></i></a>
+    
+ </div>
+ 
+<img class="w3-hide-small" style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

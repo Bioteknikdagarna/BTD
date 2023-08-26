@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.ffont{
+    font-size:36px
+}
+.ffont:link {
+  color: #389466;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ffont:visited {
+  color: #7ecea6;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ffont:hover {
+  color: #2a6f4d;
+  background-color: transparent;
+  text-decoration: underline;
+  
+}
+.ffont:active {
+  color: #389466;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.imgc {
+  
+  padding: 5px;
+  
+  height:90%;
+   border-radius: 25px;
+  background-color: rgba(0, 150, 136,1);
+}
+.navbar{
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+    
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+   padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+</style>
+<body>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.transform = "rotateY(180deg)";
+}
+</script>
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="massa.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+	<a href="studiebesok.html" class="navbaritem">Studiebesök</a>
+    <a href="hittailund.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="massa.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+	<a href="studiebesok.html" class="navmenuitem">Studiebesök</a>
+    <a href="hittailund.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1> Studiebesök </h1>
+    </div>
+  </div>
+</div>
+<!--
+<div class="w3-row-padding w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h4>  </h4>
+    </div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-center">
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-center">
+	        <div class="w3-row">
+                <div class="w3-third w3-container">
+                    <p class="imgc" style="background-color: rgba(255, 255, 255,1);"> <a  href="https://europeanspallationsource.se/" target="_blank">
+                    <img border="0" alt="W3Schools" src="img/ESS_Logo.png" style="width:100%;" >
+                    </a></p>
+                </div>
+                <div class="w3-twothird w3-container">
+                    <a class="w3-text-teal ffont" href="https://europeanspallationsource.se/" target="_blank">ESS</a>
+                    <h4></h4>
+                    <p>ESS står för European Spallation Source och är en ny stor forskningsanläggning som fortfarande är under uppbyggnad. Det är en materialforskningsanläggning med världens mest kraftfulla neutronkälla. På ESS kommer man att kunna studera olika sorters material, vilket kan vara till stor användning inom life science. Bland annat kan man studera proteiners uppbyggnad och struktur på atom och molekylnivå. Tillsammans med grann-anläggningen MAX IV är denna del av Lund ett nav för den framtida europeiska forskningen. 
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-teal ffont" href="https://alligatorbioscience.se/" target="_blank">Alligator Bioscience</a>
+	            <h4></h4>
+                
+                <p> Alligator Bioscience är ett vetenskaps- och kunskapsbaserat företag som utvecklar antikroppsbaserade läkemedel för tumörriktad immunterapi. Företaget har sina lokaler på Medicon Village i Lund och är verksamt i de tidiga faserna av läkemedelsutvecklingen, från idé till kliniska fas II-studier. I forskningsfasen tar Alligator fram nya mono- och ispecifika antikroppar med sina teknologiplattformar ALLIGATOR-GOLD® och FIND®. Utvärdering sker med avseende på funktion, affinitet och stabilitet, varpå en läkemedelskandidat väljs för fortsatt utveckling. I de prekliniska studierna utvärderas läkemedelskandidatens säkerhet och effekt samt dess kliniska potential. Dessa studier sker både internt och tillsammans med externa samarbetspartners. Slutligen utvärderas läkemedelskandidatens säkerhet och effekt i kliniska studier.
+                    </p>
+            </div>
+    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(240, 240, 240,0.9);border-radius: 0px;"> <a  href="https://alligatorbioscience.se/" target="_blank">
+<img border="0" alt="W3Schools" src="img/Aligator logo.jpg" style="width:100%;" >
+</a></p>  
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+	<div class="w3-row">
+   <div class="w3-third w3-container">
+      <p class="imgc" style="border-radius: 0px;"> <a  href="https://bioextrax.com" target="_blank">
+<img border="0" alt="W3Schools" src="img/bioetrax logga.jpg" style="width:100%" >
+</a></p>
+    </div>
+    <div class="w3-twothird w3-container">
+      <a class="w3-text-teal ffont" href="https://bioextrax.com/" target="_blank">Bioextrax</a>
+<h4></h4>
+      <p>Bioextrax has developed a biobased platform technology to selectively hydrolyze a number of protein rich materials. It is a green technology that can contribute to a circular economy and a more sustainable society.
+
+The research that the Bioextrax business concept is built upon was carried out at the Department of Biotechnology at Lund University. During this period, a cell-lysing bacteria was identified which, when brought in contact with the PHA producing microbial cells without the presence of any other reagents or solvents, could very quickly and completely lyse the cells, leaving only very pure original PHA granules and an amino-acid/protein co-product. It was very quickly concluded that this lysing bacteria had the potential to not only lyse PHA producing microbial cells, but could also be used with oils, chemicals and nutritional supplements.
+ </p>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-teal ffont" href="https://www.camurus.com/sv/" target="_blank">Camurus</a>
+	            <h4></h4>
+                
+                <p> Camurus är ett svenskt forskningsbaserat läkemedelsföretag med fokus på utveckling och marknadsföring av differentierade och innovativa läkemedel för behandling av svåra och kroniska sjukdomar. Produkterna baseras på den unika formuleringsteknologin FluidCrystal® samt en omfattande expertis inom alla faser av läkemedelsutveckling. Den kliniska forskningsportföljen innehåller produkter för behandling av cancer, endokrina sjukdomar, smärta och beroende. Utvecklingen sker i egen regi och i partnerskap med internationella läkemedelsbolag.
+                    </p>
+            </div>
+    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(240, 240, 240,0);border-radius: 0px;"> <a  href="https://www.camurus.com/sv/" target="_blank">
+<img border="0" alt="W3Schools" src="img/camuruslogo.png" style="width:100%;" >
+</a></p>  
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+	<div class="w3-row">
+   <div class="w3-third w3-container">
+      <p class="imgc" style="border-radius: 0px;"> <a  href="https://www.vasyd.se/Artiklar/Avlopp/Avloppsreningsverk/Kallby-avloppsreningsverk" target="_blank">
+<img border="0" alt="W3Schools" src="img/vasyd.png" style="width:100%" >
+</a></p>
+    </div>
+    <div class="w3-twothird w3-container">
+      <a class="w3-text-teal ffont" href="https://www.vasyd.se/Artiklar/Avlopp/Avloppsreningsverk/Kallby-avloppsreningsverk" target="_blank">VA SYD Källby reningsverk
+</a>
+<h4></h4>
+      <p>ICU (Ideal Carbon Utilisation) är ett projekt där Elin Ossiansson, processingenjör och doktorand på VA SYD och Sweden Water Research, tittar på möjligheter att använda inkommande kol till avloppsreningsverken för att minska energianvändning och utnyttja kolet som resurs. På VA SYDs avloppsreningsverk Källby utanför Lund är ICU-projektets pilotanläggning uppsatt. Där studeras filtrering av inkommande vatten kombinerat med produktion av kolkälla i en sidoströmhydrolys. Denna process-kombination har inte testats tidigare, och har potentialen att utgöra grunden för en effektivare rening av avloppsvatten. På studiebesöket får du träffa Elin och se pilotanläggningen.<a href="https://www.swedenwaterresearch.se/projekt/icu-ideal-carbon-utilisation/">Läs mer om projektet här </a>
+ </p>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container"  style="background-color: rgb(250, 250, 250);">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row" >
+		    <div  class="w3-twothird w3-container">
+                <a class="w3-text-teal ffont"  href="http://www.kc.lu.se/om/forskning/" target="_blank">Kemicentrum</a>
+	            <h4></h4>
+                
+                <p> Kemicentrums egna professorer visar upp sin forskning.
+                    </p>
+            </div>
+    <div class="w3-third w3-container w3-hidden">
+<p class="imgc" style="background-color: rgba(240, 240, 240,0);border-radius: 0px;"> <a href="http://www.kc.lu.se/om/forskning/" target="_blank">
+<img border="0" alt="W3Schools" src="img/Klogga.gif" style="width:100%;" >
+</a></p>  
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+<img class="w3-hide-small" style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

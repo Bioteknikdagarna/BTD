@@ -1,0 +1,188 @@
+html {
+
+    /*background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat; */
+}
+
+body {
+    
+    background: linear-gradient(#E8F8F8, #505075);
+    background: -webkit-linear-gradient(#E8F8F8, #505075, #E8F8F8);    
+    
+    margin:0;
+    padding:0;
+    /*height:200vh;*/
+
+}
+
+
+#menu{
+    
+    /* correct animation set in index.php
+    -webkit-animation: fadein 2s;    
+    animation: fadein 2s;
+
+    -webkit-animation: float 2s;  
+    animation: float 2s; */
+    
+    border-radius: 25px;
+    border: solid black;    
+    /*margin-top: 41vw;*/
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /*height: 2vmax;
+    
+    margin: 0 auto;
+    display: inline-block;
+    */
+    text-align: center;
+    
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-decoration: none;
+    
+    position: relative;
+}
+
+a {
+    font-family: "Lucida Sans Unicode", Helvetica, sans-serif;
+    font-size: 2vmax;
+}
+
+/* a = link */
+a:hover{
+    color: #FF0000;
+    background-color: rgba(0,0,0,0.75);    
+}
+
+a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.table a
+{
+    display:block;
+    text-decoration:none;
+}
+
+td:hover {
+    background-color: rgba(5,5,5,0.3);
+}
+
+
+
+#header{
+    /*
+    animation-name: float-in;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    height: 83vh;
+
+    -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    */
+    
+    /*position: fixed;*/
+    top: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+#footer {
+    height:10vh;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes float {
+    from { margin-top: 2vw; }
+    to   { margin-top: 2vw; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#container {
+    
+    /* -webkit-animation: fadein 2s; Safari, Chrome and Opera > 12.1     
+    animation: fadein 2s;*/
+    
+    border: solid black;
+    border-radius: 25px;
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-decoration: none;
+    
+    position: relative;
+    
+    
+}
+
+#content{
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */    
+    animation: fadein 2s;
+    animation-fill-mode: forwards;    
+    opacity: 0;
+    
+}
+
+
+p, li {
+    font-family: "Lucida Sans Unicode", Helvetica, sans-serif;
+    font-size: 1.5vmax;
+    margin-top: 0px;
+    margin-bottom: 1vmax;
+}
+
+li {margin-bottom: 0px;}
+
+h1, h2, h3, h4, h5, h6, td, th {
+  font-family: "Lucida Sans Unicode", Helvetica, sans-serif;
+  margin-top: 1vmax;
+  margin-bottom: 1px;
+  font-size: 1.5vmax;
+}
+
+h1 {font-size: 2.4vmax;}
+h2 {font-size: 2.1vmax;}
+h3 {font-size: 1.9vmax;}
+
+/* modern clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+    line-height:0;
+}
+.cf:after {
+    clear:both;
+}

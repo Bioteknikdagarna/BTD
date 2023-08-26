@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /customers/6/e/6/bioteknikdagarna.org/httpd.www/Hemsida%202021/.htpasswd
+Require valid-user

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+
+.imgsl {vertical-align: center;
+object-fit:cover;
+    max-width:100%;
+    
+}
+
+@media screen and (max-width: 1200px) {
+  .imgsl{ 
+      width: 400px;}
+}
+    
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  text-align:center;
+  position: relative;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+    .slideshow-container{
+        max-width:400px;
+    }
+}
+
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+@media screen and (max width: 1200px){
+    .prev, .next{
+        position: absolute;
+    }
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-right:-27px;
+      right:100%;
+
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.top-left-text{
+    position: absolute;
+  top: 64px;
+  left: 128px;
+  right:448px;
+}
+
+.top-right-text{
+    position: absolute;
+  top: 64px;
+  left:448px;
+  right:128px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="w3-main w3-content w3-center">
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+    
+<p>Slideshow 1:</p>
+<div class="slideshow-container">
+  <div class="mySlides1 fade">
+    <div id="imgsl w3-left-padding-320" align="left"><img src="img/slidesmall.png"style="height:100%;max-height:400px"></div>
+    <div class="top-left-text">test test text</div>
+    <div class="top-right-text">test test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test right</div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <div id="imgsl w3-left-padding-320" align="left"><img src="img/bernt.png"style="height:100%;max-height:400px"></div>
+    <div class="top-right-text">test test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test righttest test right</div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <div id="imgsl w3-right-padding-320" align="right"><img src="img/border3.png"style="height:100%;max-height:400px"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div> 
+</div>
+</div>
+
+<div class="w3-main w3-content w3-center">
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+    
+<p>Slideshow 2:</p>
+
+<div class="slideshow-container">
+  <div class="mySlides2 fade">
+    <img src="img/btdfavicon1.png" style="height:100%;max-height:400px">
+  </div>
+
+  <div class="mySlides2 fade">
+    <img src="img/charlotte.png" style="height:100%;max-height:400px">
+  </div>
+
+  <div class="mySlides2 fade">
+    <img src="img/gang2.jpg" style="height:100%;max-height:400px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div> 
+</div>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 

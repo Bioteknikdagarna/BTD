@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/indexbakgrund2kopia.png");
+  background-position: 10% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 400px;
+  
+}
+@media screen and (max-width: 1200px) {
+  .hero-image {
+width:100%;
+
+  
+  }
+}
+
+.fa-facebook-square {
+  background: white;
+  color: #4C8D2B;
+}
+
+.fa-instagram {
+  background: white;
+  color: #4C8D2B;
+}
+
+
+.hero-text {
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size:500%;
+  color: white;
+  font-weight: bold;
+}
+.gang {
+ display: block;
+ width:75%;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+  z-index:1;
+}
+@media screen and (max-width: 1000px) {
+  .gang {
+    width:90%;
+    max-width:500px;
+    margin:auto;
+    z-index:1;
+    position: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    
+    font-size:8vw;
+  
+  }
+}
+.hero-text2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size:300%;
+  
+}
+@media screen and (max-width: 1200px) {
+  .hero-text2 {
+    font-size:5vw;
+  }
+}
+.navbar{
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index:2;
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+.column{
+    float:left;
+    width:50%;
+    padding:10px;
+}
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+  width: 100%;
+  }
+
+</style>
+<body>
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="foretag.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="foretag-mobil.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+
+<!-- Header -->
+<header class=" w3-center" style="padding:0px 0px;color:transparent;z-index: -1;">
+    <div class="hero-image " >
+            <h1 class="hero-text" >Bioteknikdagarna</h1>
+             <p class="hero-text2">Linköping 2021</p>
+     </div>   
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h2>Hej!</h2>
+      <h5 class="w3-padding-10">
+	  Välkommen till den officiella hemsidan för Bioteknikdagarna 2021. Här kommer all information som du behöver före och under eventet att publiceras löpande. <br><br><br>
+ 
+Bioteknikdagarna är ett evenemang för bioteknikstudenter i hela Sverige som i höst kommer att äga rum i Linköping! Eventet kommer äga rum den 25:e till den 28:e november.<br><br>
+ 
+Under fyra fullspäckade dagar kommer alla deltagare att få ta del av spännande föreläsningar och vår alldeles egna arbetsmarknadsmässa Genvägen. Utöver det så är kvällarna fyllda med olika aktiviteter, däribland en pub, sittningar och en Kravall (fest med klädkod studentoverall)! <br><br>
+ 
+Bioteknikdagarna har något för bioteknikstudenter i alla årskurser. Är du på jakt efter exjobb? Söker du inspiration till framtiden? Vill du lära känna och dela erfarenheter med bioteknikstudenter från andra lärosäten? Då är bioteknikdagarna något för dig!<br><br>
+ 
+Vi ses i höst! <br><br>
+
+
+
+		</h5>
+    </div>
+
+
+<div class="w3-display-container gang">
+  <img src="img/Bilder på oss/projektgruppen2021.jpg" alt="Lights" style="width:100%;
+  height:150%;
+  object-fit:cover;">
+  <h5 style="text-align: center;">Varma hälsningar,  <a href="https://www.bioteknikdagarna.org/omoss.html">Projektgruppen 2021</a></h5>
+
+</div>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+    </div>
+
+    <div class="w3-container">
+    
+      <h1 style="text-align: center;">I samarbete med</h1>
+      </div>
+
+    <div class="row">
+      <div class="column">
+     <a href="https://triathlon.se"><img class= "w3-padding-32" src= "img/Triathlon Logo.png" alt="Triathlon" style="width:100%"></a>
+      </div>
+      <div class="column">
+      <a href ="https://www.nordicbiomarker.com/"><img src= "img/NordicBiomarker.svg" alt="Nordic Biomarker"style="width:100%"></a>
+      </div>
+      <div class="column">
+          <img src="img/Liu logga.png" alt="Linköpings Universitet" style="width:50%" img>
+      </div>
+      <div class="column">
+          <img src="img/TBilogo.png" alt="Tbi sektionen" style="width:50%" img>
+      </div>
+      </div>
+
+
+  </div>
+</div>
+<!--
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+-->
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<!--  <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i> -->
+
+    <div class="w3-xlarge w3-padding-32">
+    	<a href ="https://www.facebook.com/bioteknikdagarna2021">
+	    <i class="fa fa-facebook-square w3-hover-opacity w3-margin-right" style= "font-size:64px"></i></a>
+	<a href ="https://www.instagram.com/bioteknikdagarna2021/">
+	    <i class="fa fa-instagram w3-hover-opacity" style= "font-size:67px"></i></a>
+    
+ </div>
+
+ <img class="w3-hide-small" style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ 
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

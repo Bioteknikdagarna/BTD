@@ -1,0 +1,117 @@
+
+@media(orientation : portrait) {
+    .galleryPost {
+        height : fit-content;
+        width : 90vw;
+    }
+    .galleryPost > * {
+        width : 86vw;
+        padding : 2vw;
+    }
+    .slideGallery {
+        width : 100% !important;
+        height : 100% !important;
+        padding : 15px 5vw 15px 5vw !important;
+    }
+}
+@media(orientation : landscape) {
+    .galleryPost {
+        height : fit-content;
+        min-height: 100%;
+    }
+    .galleryPost > * {
+        width : 30vh;
+        padding : 2vh;
+    }
+    .supporters .galleryPost {
+        height : fit-content;
+        min-width : 50vh;
+    }
+    .supporters .galleryPost > * {
+        width : 46vh;
+        padding : 2vh;
+    }
+    .slideGallery {
+        width : 80% !important;
+        height : 100% !important;
+        padding : 15px 20% 15px 5% !important;
+    }
+}
+
+.personnel.row, .supporters.row, .lecturers.row {
+    width : 100% !important;
+    min-height: fit-content !important;
+    max-height: fit-content !important;
+    flex-direction: column !important;
+    margin-bottom : 10vh !important;
+}
+
+.personnel.row > h2, .supporters.row > h2, .lecturers.row > h2 {
+    text-align: center;
+    font-size : xx-large;
+}
+
+.slideGallery {
+    display : flex !important;
+    flex-direction : row !important;
+    justify-content : flex-start !important;
+    overflow-x : scroll !important;
+    overflow-y : hidden !important;
+    margin-left : 0 !important;
+    margin-right : 0 !important;
+
+    scrollbar-width : thin;
+    scrollbar-color : #7fd15c80 transparent;
+}
+.slideGallery::-webkit-scrollbar                {display : block;}
+.slideGallery::-webkit-scrollbar-thumb          {background: #7fd15c80;}
+.slideGallery::-webkit-scrollbar-track          {background: transparent; height : 2vh;}
+.slideGallery::-webkit-scrollbar-thumb:hover    {background: #7fd15c96;}
+
+.galleryPost {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position : relative;
+    padding : 0 !important;
+}
+
+.imageBox {
+    display : flex;
+    justify-content: center;
+    flex-direction: row;
+    height : 30vh;
+    position : relative;
+}
+.imageBox > h4 {
+    position : absolute;
+    bottom : 2.5%;
+    right : 0;
+    max-width : 100%;
+    font-size: 50%;
+}
+.supporters .imageBox { height : 10vh;}
+
+.galleryPost > h4 {
+    height : 15%;
+    text-align: center !important;
+    font-size: 100%;
+    line-height: 150%;
+    margin-block: 0 !important;
+}
+.supporters .galleryPost > h4 { height : 5vh; }
+
+.galleryPost > p {
+    text-align: center !important;
+    font-size: 100% !important;
+    line-height: 150%;
+}
+.supporters .galleryPost > p { height : fit-content; }
+
+.imageBox > img {
+    max-height : 100%;
+    max-width : 100%;
+    display : block !important;
+    height : auto;
+    width : auto;
+}

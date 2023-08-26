@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline|Modak|Monoton|Press+Start+2P|Righteous">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.fliptest{
+    transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg); 
+}
+.week {
+  font-size: 2vw;
+  font-family: 'Righteous', cursive;
+  line-height: 1vw;
+  bottom:50px;
+}
+.title {
+    font-family: 'Righteous', cursive;
+   line-height: normal;
+  font-size: 1.8vw;
+  padding:0px 0px;
+  
+  text-align:left;
+  margin-left: 3%;
+}
+@media screen and (max-width: 1200px) {
+  .title {
+  
+    font-size: 2.5vw;
+  }
+}
+.time {
+  
+  font-size: 1.5vw;
+  line-height: 0.3vw;
+  text-align:left;
+  margin-left: 3%;
+  
+}
+.info{
+   
+  font-size: 0.9vw;
+  margin: 1vw;
+  
+}
+@media screen and (max-width: 1200px) {
+  .info {
+  
+    font-size: 1.2vw;
+  }
+}
+.column {
+  position: relative; 
+  width: 25%;
+  
+  padding-bottom: 120%;
+  background: rgba(0, 0,0,0) ;
+  
+  }
+ 
+ 
+@media screen and (max-width: 1200px) {
+  .column {
+  
+    
+  }
+}
+
+.week-c {
+    box-sizing: border-box;
+    color:#000000;
+    background: rgba(0,0, 0,0) ;
+    box-shadow: inset 0px -2px 0px #808080, 2px 0px 0px #808080;
+    -webkit-box-shadow: inset 0px -2px 0px #808080, 2px 0px 0px #808080;
+    -moz-box-shadow: inset 0px -2px 0px #808080, 2px 0px 0px #808080;
+}
+
+@media screen and (max-width: 1200px) {
+  .week-c {
+   box-shadow: inset 0px -1px 0px #808080, 1px 0px 0px #808080;
+   -webkit-box-shadow: inset 0px -1px 0px #808080, 1px 0px 0px #808080;
+   -moz-box-shadow: inset 0px -1px 0px #808080, 1px 0px 0px #808080;
+  }
+}
+.card {
+    position: absolute; 
+    width: 100%;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    
+  }
+}
+.orange-c {
+    box-shadow: inset 0px -5px 0px #994d00;
+    -webkit-box-shadow: inset 0px -5px 0px #994d00;
+    -moz-box-shadow: inset 0px -5px 0px #994d00;
+    box-sizing: border-box;
+    background-color: #ffbf80;
+}
+@media screen and (max-width: 1200px) {
+  .orange-c {
+    box-shadow: inset 0px -1px 0px #994d00;
+    -webkit-box-shadow: inset 0px -1px 0px #994d00;
+    -moz-box-shadow: inset 0px -1px 0px #994d00;
+  }
+}
+.blue-c{
+    box-shadow: inset 0px -5px 0px #00141a;
+    box-sizing: border-box;
+    background-color: #006680;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .blue-c{
+    box-shadow: inset 0px -1px 0px #00141a;
+  }
+}
+.green-c{
+    box-shadow: inset 0px -5px 0px #153726;
+    box-sizing: border-box;
+    background-color: #389466;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .green-c{
+    box-shadow: inset 0px -1px 0px #153726;
+  }
+}
+.pink-c{
+   
+    box-shadow: inset 0px -5px 0px #990033;
+    box-sizing: border-box;
+    background-color: #ff6699;
+    
+}
+
+@media screen and (max-width: 1200px) {
+  .pink-c{
+    box-shadow: inset 0px -1px 0px #990033;
+  }
+}
+.schedulebox {
+    position:relative;
+    z-index:0;
+    width:65%;
+    margin:auto;
+    display: flex;
+    padding:0px 0px;
+    border: 5px solid transparent;
+    background: rgba(255, 246, 102,0.8) 
+    background-size: cover; 
+    -webkit-border-image: url(img/border3.png) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(img/border3.png) 30 round; /* Opera 11-12.1 */
+    border-image:url(img/border3.png);
+    border-image-repeat: round;
+    border-image-slice: 33%;
+    border-image-width: 5px; 
+    
+    
+   
+  }
+@media screen and (max-width: 1200px) {
+  .schedulebox {
+    border: 1px solid transparent;
+    border-image:url(img/border3.png);
+    -webkit-border-image: url(img/border3.png) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(img/border3.png) 30 round; /* Opera 11-12.1 */
+    border-image-repeat: round;
+    border-image-slice: 33%;
+    border-image-width: 1px; 
+    width:90%;
+   
+  }
+}
+.gridtime {
+  display: grid;
+  grid-template-columns: 100% ;
+  grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+  
+ 
+}
+
+.grid-item {
+  
+ 
+  font-family: 'Righteous', cursive;
+  box-sizing: border-box;
+  font-size: 1vw;
+  text-align: center;
+  padding:5px;
+  color:#000000;
+   background: rgba(0,0, 0,0) ;
+    box-shadow: inset -2px -2px 0px #808080, 0px 0px 0px #808080;
+}
+@media screen and (max-width: 1200px) {
+  .grid-item {
+   box-shadow: inset -1px -1px 0px #808080, 0px 0px 0px #808080;
+ 
+  }
+}
+.flip-card {
+    position: absolute;
+  background-color: transparent;
+  width: 100%;
+  
+  perspective: 1000px;
+    -webkit-perspective: 1000px;
+  -o-perspective: 1000px;
+  -moz-perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: absolute;
+  
+ 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.6s;
+  -o-transform-style: preserve-3d;
+  -o-transition: -o-transform 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: -moz-transform 0.6s;
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 1200px) {
+  .flip-card-inner {
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.3);
+  }
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+.flip-card-front {
+  
+}
+@media screen and (max-width: 1200px) {
+  .flip-card-front {
+    
+  }
+}
+
+.flip-card-back {
+  
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.navbar{
+    position:fixed;
+    
+  z-index:2;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    z-index:2;
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+.omschema{
+    position:absolute;
+    z-index:1;
+    top:270px;
+    color:green;
+    float:left;
+    margin-left: 1%;
+    width:15%;
+    font-size: 1vw;
+     text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .omschema {
+    
+  visibility: hidden;
+  }
+}
+.omschemat{
+   visibility: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .omschemat {
+    
+  visibility: visible;
+  }
+}
+</style>
+<body>
+
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="foretag.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="foretag-mobil.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+    
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1> Schema</h1>
+          <h4></h4>
+    </div>
+  </div>
+</div>
+
+
+<!--Denna texten ligger till sidan om -->
+<div class="omschema">
+      <div> -Alla tider är prick, alltså, inga akademiska
+kvartar.<br><br>
+-Vi reserverar oss för eventuella ändringar och
+för den mest aktuella informationen
+rekommenderar vi att ni spanar in hemsidan
+eller FB-gruppen.<br><br>
+-Klicka/håll över de olika aktiviteterna i schemat för mer info.<br> (Funkar inte på alla telefoner)
+<br><br>
+<b>Viktig information angående sovsalar:</b><br>
+Tider då man kommer in i sovsalar:
+<br> Fredag; 17:00-18:00
+<br>         21:00-03:00
+<br><br> Lördag; 07:30-09:30
+<br>      16:00-17:45
+<br>      22:00-03:30
+<br><br> Söndag; 08:30-15:00
+<br><br><b> Journummer sovsalar:
+<br> 073-8 38 36 68</b>
+    </div>
+</div>
+
+<!-- schemat läggs in här -->
+
+<div class="w3-container schedulebox">
+    
+    
+    <div class="gridtime">
+        <div class="grid-item"></div>
+        <div class="grid-item">08:00</div>
+        <div class="grid-item">09:00</div>
+        <div class="grid-item">10:00</div>  
+        <div class="grid-item">11:00</div>
+        <div class="grid-item">12:00</div>
+        <div class="grid-item">13:00</div>  
+        <div class="grid-item">14:00</div>
+        <div class="grid-item">15:00</div>
+        <div class="grid-item">16:00</div>
+        <div class="grid-item">17:00</div>
+        <div class="grid-item">18:00</div>
+        <div class="grid-item">19:00</div>
+        <div class="grid-item">20:00</div>
+        <div class="grid-item">21:00</div>
+        <div class="grid-item">22:00</div>
+        <div class="grid-item">23:00</div>
+        <div class="grid-item">00:00</div>
+        <div class="grid-item">01:00</div>
+        <div class="grid-item">02:00</div>
+        
+          
+        </div>
+  
+    <div class="column" >
+         <div class="week-c card" style="height: 5%;">
+          
+            <p class="week">Torsdag</p>
+          
+          
+        </div>
+        
+        <div class="flip-card" style="height:5.26%; top: 34.75%;">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front green-c">
+                    <p class="time">Introduktion</p>
+                    <p class="title"></p>
+                    <p class="info"></div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">14:00 - 15:00, Lokal C4</p>
+                    
+                </div>
+            </div>
+        </div>
+     
+      <div class="flip-card" style="height:9%; top: 52%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c">
+                     <p class="time"style="line-height: 0.3vw;">17:30-18:50</p>
+                     <p class="title"style="line-height: 1%;">Fulvinsrunda</p>
+            
+                     <p class="info" style="line-height: 1%;">Plats: Bakom C-huset</p>
+                </div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">Kom och drick fulvin och delta i roliga lekar!</p>
+                </div>
+            </div>
+        </div>
+        
+      <div class="flip-card" style="height:15%; top: 60%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front orange-c">
+                    <p class="time"style="line-height: 0.3vw;">19:00 - 21:15</p>
+                    <p class="title">Fulsittning</p>
+                    <p class="info"></p>
+                </div>
+                <div class="flip-card-back orange-c">
+                    <p class="info">Lär dig lite om studentlivet i Linköping <a style="color:green" href="http://www.bioteknikdagarna.org/studentlivilkpg.html">här.</a></p>
+                    
+                </div>
+            </div>
+        </div>
+        
+         <div class="flip-card" style="height:25%; top: 75%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front pink-c">
+                    <p class="time">22:00-03:00</p>
+                    <p class="title">Eftersläpp</p>
+            
+                    <p class="info">Lokal: Kårallen
+                </div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">Kravall! Glöm inte dina studentoveraller!</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   
+        <div class="column">
+            <div class="week-c card" style="height: 5%;">
+          
+                <p class="week">Fredag</p>
+
+            </div>
+        
+        <div class="flip-card" style="top: 5%;height: 8%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front orange-c">
+                    <p class="time"style="line-height: 0.3vw;"> - 09:30</p>
+                    <p class="title"style="line-height: 1%;">Hotellfrukost</p>
+            
+                    <p class="info"></div>
+                <div class="flip-card-back green-c">
+                    <p class="info">För de som bor på hotell</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" style="height:11%; top: 15%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c">
+                     <p class="time"style="line-height: 0.3vw;">10:00-12:00</p>
+                     <p class="title"style="line-height: 1%;">Företagsmässa</p>
+            
+                     <p class="info" style="line-height: 1%;">Grupp 1: Företagsmässan</p>
+                     <p class="info" style="line-height: 1%;">Grupp 2: Aktivitet</p>
+                </div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">Lokal för mässa:<br> Ledsna flickan, A-huset</p>
+                    <a class="info" href="https://www.bioteknikdagarna.org/foretag.html">Mer info</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="height:5.26%; top: 26%;">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front pink-c">
+                    <p class="time">Lunchföreläsning</p>
+                    <p class="title"></p>
+                    <p class="info"></div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">12:15 - 13:00, Lokal: A2</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+          <div class="flip-card" style="height:10%; top: 31%;">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c" style="">
+                        <p class="time" style="line-height: 0.3vw;">13:00-15:00</p>
+                        <p class="title" style="line-height: 1%;">Företagsmässa</p>
+                        
+                        <p class="info" style="line-height: 1%;">Grupp 2: Företagsmässan</p>
+                        <p class="info" style="line-height: 1%;">Grupp 1: Aktivitet</p>
+                        
+                </div>
+                <div class="flip-card-back orange-c">
+                    <p class="info">Aktiviteter: Häfv, drag och lekar med TBi-sektionen i Märkesbacken</p>
+                    
+                </div>
+            </div> 
+        </div>
+        
+         <div class="flip-card" style="height:5.26%; top: 41%;">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front green-c">
+                    <p class="time">Fikaföredrag</p>
+                    <p class="title"></p>
+                    <p class="info"></div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">15:15 - 15:45, Lokal: C1</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="height:20%; top: 55%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front pink-c">
+                    <p class="time"style="line-height: 0.3vw;">18:00 - 22:00</p>
+                    <p class="title">Företagspub med Randstad</p>
+                    <p class="info">Lokal: Ryds Herrgård [Hg]</p>
+                </div>
+                <div class="flip-card-back orange-c">
+                    <p class="info"></p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="top: 80%;height:20%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c">
+                    <p class="time">23:00 - 02:00</p>
+                    <p class="title">Eftersläpp</p>
+                   <p class="info">Lokal: Ryds Herrgård [Hg]</p>
+                </div>
+                <div class="flip-card-back orange-c">
+                    <p class="info"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+            
+    <div class="column">
+         <div class="week-c card" style="height: 5%;">
+          
+            <p class="week">Lördag</p>
+        
+        </div>
+               
+  
+         <div class="flip-card" style="height:10%;top: 5%;">
+            <div class="flip-card-inner" style="">
+                <div class="flip-card-front green-c">
+                    <p class="time">08:00 - 10:00</p>
+                    <p class="title" style="line-height: 1%;">Frukost</p>
+                    <p class="info">U-korridoren, C-huset</p>
+                </div>
+                <div class="flip-card-back green-c">
+                    <p class="info"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="height:21%;top: 15%;">
+            <div class="flip-card-inner" style="">
+                <div class="flip-card-front orange-c">
+                    <p class="time">10:00 - 13:45</p>
+                    <p class="title">Föreläsningar</p>
+                    <p class="info">Lokal: C1</p>
+                </div>
+                <div class="flip-card-back green-c">
+                    <p class="info">iGem: 10:00-10:30</p>
+                    <p class="info">Emma: 10:45-11:15</p>
+                    <p class="info">Gunnar: 11:30-12:00</p>
+                    <p class="info">Lunch i Collosseum</p>
+                    <p class="info">Daniel: 13:15-13:45</p>
+                    <a class="info" href="https://www.bioteknikdagarna.org/forelasare.html">Mer info om föreläsarna</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="top: 37%;height:5%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front pink-c">
+                    <p class="title"style="line-height: 1%;">BTS Höstmöte</p>
+                   <p class="info"></p>
+                </div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">14:30-15:30, Lokal: C1</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card" style="top:55%;height:20%; ">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c" style="">
+                    <p class="time">18:00 - 22:00 </p>
+                    <p class="title">Finsittning</p>
+                    <p class="info">Lokal: Kårhuset Kollektivet</p>
+                </div>
+                <div class="flip-card-back pink-c">
+                    <p class="info"></p>
+                    
+                </div>
+            </div>
+        </div>
+       
+        <div class="flip-card" style="top: 75%;height:25%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front green-c">
+                    <p class="time">22:00 - 03:00</p>
+                    <p class="title">Eftersläpp</p>
+                   <p class="info">Lokal: Kårhuset Kollektivet</p>
+                </div>
+                <div class="flip-card-back orange-c">
+                    <p class="info"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="column">
+         <div class="week-c card" style="height: 5%;border-right: 0px solid transparent;">
+          
+            <p class="week">Söndag</p>
+        </div>
+        
+         <div class="flip-card" style="height:10%; top: 5%">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front blue-c">
+                     <p class="time">8:00 - 10:00</p>
+                     <p class="title">"Ta med"-frukost</p>
+            
+                     <p class="info"></p>
+                </div>
+                <div class="flip-card-back blue-c">
+                    <p class="info">Kom och ät en god frulle på folkungaskolan innan ni åker!</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="week-c card omschemat" style="height:60%; top: 40%;">
+          
+            <p style="color:green" class="info">
+                -Alla tider är prick, alltså, inga akademiska
+                kvartar.<br><br>
+                -Vi reserverar oss för eventuella ändringar och
+                för den mest aktuella informationen
+                rekommenderar vi att ni spanar in hemsidan
+                eller FB-gruppen.<br><br>
+                -Klicka/håll över de olika aktiviteterna i schemat för mer info.<br> (Funkar inte på alla telefoner)<br><br>
+                 <b>Viktig information angående sovsalar:</b><br>
+Tider då man kommer in i sovsalar:
+<br> Fredag; 17:00-18:00
+<br>         21:00-03:00
+<br><br> Lördag; 07:30-09:30
+<br>      16:00-17:45
+<br>      22:00-03:30
+<br><br> Söndag; 08:30-15:00
+<br><br><b> Journummer sovsalar:
+<br> 073-8 38 36 68</b></p>
+         
+          
+        </div>
+    </div>
+
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h4>Svårt att hitta till salarna? <a style= "color: green;" href="https://www.bioteknikdagarna.org/hittailinkoping.html">Klicka Här!</a></h4>  
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+  <img class="w3-hide-small" style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+//$(document).ready(function(){
+  //$("flip-card").click(function(){
+   // $(this).addClass("fliptest");
+ // });
+//});
+</script>
+
+</body>
+</html>

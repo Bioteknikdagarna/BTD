@@ -1,0 +1,516 @@
+
+body {
+    padding : 0;
+    margin : 0;
+    font-family : Verdana;
+    overflow : hidden;
+    overflow-anchor: none;
+    overscroll-behavior: contain;
+}
+body > #root {
+    padding : 0;
+    margin : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow : hidden;
+    overflow-anchor: none;
+    overscroll-behavior: contain;
+}
+
+.primary                    { color       : #509350; }
+.primary.background         { background-color  : #7fd15c;}
+.primary.transparentBG      { background-color  : #7fd15ca0; box-shadow : 0 0 5px #7fd15ca0}
+
+.secondary                  { color : #7fd15c; }
+.secondary.background       { background-color  : #509350;}
+.secondary.transparentBG    { background-color  : #509350a0; box-shadow : 0 0 5px #509350a0}
+
+
+.primary .accent {
+    background-color  : #20202020;
+}
+.secondary .accent {
+    background-color  : #202020b0;
+}
+
+.noBackground {
+    background : transparent !important;
+}
+
+.primary a:link { color : #509350; }
+.secondary a:link { color : #7fd15c; }
+
+.primary a:visited { color : #7fd15c; }
+.secondary a:visited { color : #509350; }
+
+a:hover { filter : brightness(2.0); }
+a:active { color : white; }
+
+#contentContainer div.primary, #contentContainer img.primary {
+    border-radius : 15px;
+    padding : 15px;
+}
+
+#contentContainer div.secondary, #contentContainer img.secondary {
+    border-radius : 10px;
+    padding : 10px;
+}
+
+#mainContainer {
+    display : flex;
+    justify-content : center;
+    padding : 0 0 0 0;
+    overflow-y : scroll;
+    scrollbar-width : none;
+
+    position : absolute;
+    right:0;
+    bottom:0;
+}
+
+#mainContainer > div {
+    height : 100%;
+    width : 100%;
+    position : relative;
+}
+
+::-webkit-scrollbar{
+    display : none;
+}
+
+#contentContainer {
+    width : 100%;
+    height : 100%;
+    position : relative;
+}
+
+#titleSplash {
+    display : flex;
+    flex-direction : column;
+    justify-content : space-evenly;
+    width : 90%;
+    padding-left : 5% !important;
+    padding-right : 5% !important;
+    min-height : 100vh;
+    font-size : 72px;
+    line-height : 128px;
+    box-shadow : none !important;
+    text-align : center;
+    gap : 10px;
+}
+
+#splashLogoLarge {
+    max-width : 1280px;
+    width : 90%;
+    margin-left : auto;
+    margin-right : auto;
+}
+#splashLogoMedium {
+    display : none;
+    max-width : 720px;
+    width : 90%;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+#titleSplash p, #titleSplash h1 {
+    margin-block : 0;
+}
+#dateContainer {
+    width : 800px;
+    max-width : 90%;
+    font-size : 36px;
+    margin : 0 auto;
+}
+#dotContainer {
+    width : 52px;
+    margin : 0 auto;
+}
+#dotContainer > p:nth-of-type(1) {
+    -webkit-animation : glow 3s infinite;
+    animation : glow 3s linear infinite;
+}
+#dotContainer > p:nth-of-type(2n) {
+    -webkit-animation : glow 3s 0.66s infinite;
+    animation : glow 3s linear 0.66s infinite;
+}
+#dotContainer > p:nth-of-type(3n) {
+    -webkit-animation : glow 3s 1.33s infinite;
+    animation : glow 3s linear 1.33s infinite;
+}
+@keyframes glow {
+    from { opacity : 1.0; }
+    25% { opacity : 0.2; }
+    50% { opacity : 0.2; }
+    75% { opacity : 0.2; }
+    to { opacity : 1.0; }
+}
+@-webkit-keyframes glow {
+    from { opacity : 1.0; }
+    25% { opacity : 0.2; }
+    50% { opacity : 0.2; }
+    75% { opacity : 0.2; }
+    to { opacity : 1.0; }
+}
+
+#contentContainer .row {
+    position : relative;
+    display : flex;
+    overflow : hidden;
+    align-items: center;
+    width : 100vw;
+    margin-left : 0;
+    margin-right : 0;
+    box-shadow : 0 0 50px black;
+    margin-bottom : 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    line-break: normal;
+}
+.row > img {
+    position : absolute;
+    top : 0;
+    z-index : -1;
+}
+.row > div {
+    display : flex;
+    justify-content : center;
+    gap : 20px;
+    flex-direction : column;
+    width : 1280px;
+}
+.row > div > div {
+    padding : 1em;
+}
+.row > div > div > p {
+    text-align : justify;
+    margin-block : 0;
+    margin-inline : 0;
+    word-wrap: normal;
+}
+
+
+#navigationBarContainer {
+    position : absolute;
+    display : flex;
+    justify-content : center;
+    top : 0;
+    left : 0;
+    box-shadow : 0 15px 15px #00000020;
+}
+
+#navigationBar {
+    display : flex;
+    background : none;
+}
+
+.buttonDiv {
+    position : relative;
+    display : flex;
+    background : transparent;
+    cursor: pointer;
+}
+.nointeract {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.buttonDiv:hover {
+    opacity : 0.7;
+}
+
+.buttonDiv > div {
+    display : flex;
+}
+
+.base {
+    text-align : center;
+    color : #509350;
+}
+
+#backgroundVideo {
+    background-color : black;
+    position : absolute;
+    background-size : cover;
+    background-repeat : no-repeat;
+    z-index: -1;
+    right : 0;
+    box-shadow : 0 0 10px black inset;
+}
+
+#backgroundVideo > div {
+    position : relative;
+    min-height : 111vh;
+    min-width : 100vw;
+    /*filter: blur(5px);*/
+    /* Dropped due to Firefox on Linux not supporting NVIDIA GPUs for hardware acceleration */
+}
+    
+#backgroundVideo > div > video {
+    position : absolute;
+    right : 0;
+    top : 0;
+    min-width : 100%;
+    min-height : 100%;
+}
+
+#mobileNavigationBarContainer {
+    display : none;
+}
+
+video[name="DesktopBackground"] { display : none; }
+video[name="MobileBackground"] { display : none; }
+
+@media(min-width : 1050px) {
+    #backgroundVideo {
+        background-image : url("../Images/Slides/Slide1.png");
+    }
+    video[name="DesktopBackground"] { display : block; }
+    #mainContainer {left:0;}
+    #contentContainer .row { min-height : 40vw; max-height : 95vh;}
+    .row > img { width : 100%; min-height: 100%;}
+    /* .row > div { max-height : 50vw; } */
+    .activeCategory {
+        -webkit-animation : slidein 0.5s forwards;
+        animation : slidein 0.5s forwards;
+    }
+    .opposite:not(.activeCategory) {
+        -webkit-animation : slideout 0.5s forwards;
+        animation : slideout 0.5s forwards;
+    }
+
+    @keyframes slidein {
+        from { margin-top : 100%; opacity : 0; }
+        to { margin-top : 0%; opacity : 1; }
+    }
+    @-webkit-keyframes slidein {
+        from { margin-top : 100%; opacity : 0; }
+        to { margin-top : 0%; opacity : 1; }
+    }
+
+    @keyframes slideout {
+        from { margin-top : 0%; opacity : 1; }
+        to { margin-top : 100%; opacity : 0; }
+    }
+    
+    @-webkit-keyframes slideout {
+        from { margin-top : 0%; opacity : 1; }
+        to { margin-top : 100%; opacity : 0; }
+    }
+
+    .row > div {
+        width : 50%;
+        margin-left : 10%;
+        margin-right : 10%;
+    }
+    @media(max-width : 1350px) {
+        .row > div > div > p { font-size : 14px; }
+        #navigationBarContainer { top : 20px; height : 100px; }
+        #mainContainer {top:120px;}
+        /* #contentContainer { padding-bottom : 120px; } */
+        .padRow {height : 120px;}
+        .buttonDiv > div {
+            width : 22px;
+        }
+        .basePair, .base, .ribose, .ribose > svg {
+            height : 22px;
+        }
+        .base {
+            font-size : 22px;
+            line-height : 22px;
+        }
+    }
+    @media(min-width : 1350px) {
+        .row > div > div > p { font-size : 18px; }
+        #navigationBarContainer { top : 20px; height : 140px; }
+        #mainContainer { top : 160px; }
+        .padRow {height : 160px;}
+        .buttonDiv > div {
+            width : 30px;
+        }
+        .basePair, .base, .ribose, .ribose > svg {
+            height : 30px;
+        }
+        .base {
+            font-size : 30px;
+            line-height : 30px;
+        }
+    }
+
+    #navigationBarContainer {
+        right : 0;
+    }
+    .buttonDiv {
+        padding : 5px 0;
+        margin : 0;
+        flex-direction : row;
+    }
+    .buttonDiv > div {
+        flex-direction : column;
+    }
+
+    .basePair, .base, .ribose, .ribose > svg {
+        width : 100%;
+        background : transparent;
+    }
+}
+
+@media(max-width : 1050px) {
+    #contentContainer .row { min-height : 80vh; max-height : 120vh;}
+    .row > img { min-width : 100%; min-height: 100%;}
+    #mainContainer {left : 0px;top:0px;}
+    /* .row > div { max-height : 100vw; } */
+    #navigationBarContainer {
+        display : none;
+    }
+    @media(orientation : portrait) {
+        #backgroundVideo {
+            background-image : url("../Images/SlidesMobile/Slide1.png");
+        }
+        video[name="MobileBackground"] { display : block; }
+
+        #mobileNavigationBarContainer {
+            flex-direction : column;
+            right : 0;
+            min-height : 50px;
+            max-height : 50px;
+        }
+        #mobileNavigationBar {
+            flex-direction : column;
+            overflow-y : scroll;
+            height : 0;
+            width : 100%;
+        }
+        #mobileNavigationBar > div {
+            padding : 10px 5%;
+        }
+        #mobileNavigationBarContainer.active {
+            max-height : 100vh;
+        }
+        #mobileNavigationBarContainer.active > #mobileNavigationBar {
+            height : auto;
+        }
+        #mobileNavigationBarHead {
+            height : 50px !important;
+            width : auto;
+            box-shadow: 0px -10px 10px -10px #509350 inset;
+        }
+        #mobileNavigationBarHead > div {
+            height : 50px !important;
+            width : auto;
+        }
+        #mainContainer {top : 50px;}
+    }
+    @media(orientation : landscape) {
+        #backgroundVideo {
+            background-image : url("../Images/Slides/Slide1.png");
+        }
+        video[name="DesktopBackground"] { display : block; }
+        #mobileNavigationBarContainer {
+            flex-direction : row;
+            min-width : 50px;
+            max-width : 50px;
+        }
+        #mobileNavigationBar {
+            flex-direction : row;
+            overflow-x : scroll;
+            width : 0;
+            height : 100%;
+            flex-wrap : wrap;
+            gap : 10px;
+        }
+        #mobileNavigationBar > div {
+            width : 40%;
+        }
+        #mobileNavigationBar > div > h2 {
+            margin-block : 0;
+        }
+        #mobileNavigationBarContainer.active {
+            max-width : 100vw;
+        }
+        #mobileNavigationBarContainer.active > #mobileNavigationBar {
+            width : auto;
+        }
+        #mobileNavigationBarHead {
+            width : 50px !important;
+            height : 130vh;
+            box-shadow: -10px 0px 10px -10px #509350 inset;
+        }
+        #mobileNavigationBarHead > div {
+            width : 50px !important;
+            height : 100vh;
+        }
+        #mobileNavigationBarHead > div > h1 {
+            transform: rotate(-90deg);
+        }
+        #mainContainer {
+            left : 50px;
+        }
+        /* #contentContainer {
+            padding-top : 10px;
+            padding-bottom : 10px;
+        } */
+    }
+    #mobileNavigationBarContainer {
+        z-index : 3;
+        display : flex;
+        justify-content : flex-end;
+        position : absolute;
+        top : 0;
+        left : 0;
+        overflow : hidden;
+        box-shadow: 0 0 20px #20202020;
+    }
+    #mobileNavigationBar {
+        display : flex;
+        margin : 0;
+        scrollbar-width : none;
+    }
+    #mobileNavigationBarContainer.active {
+        transition : 0.2s;
+    }
+    #mobileNavigationBarContainer.active > #mobileNavigationBar {
+        transition : 0.2s;
+    }
+
+    #mobileNavigationBar > div {
+        line-height : 2em;
+        font-size : 16px;
+        word-wrap : normal;
+        text-overflow: clip;
+        cursor: pointer;
+    }
+    #mobileNavigationBar > div > h2 {
+        padding : 0.5em;
+        margin-block : 0;
+    }
+    #mobileNavigationBar > div:hover > h2 {
+        background : #20202020;
+    }
+    #mobileNavigationBar::-webkit-scrollbar-track{
+        width : none;
+    }
+    #mobileNavigationBarHead > div {
+        line-height : 12.5px;
+        font-size : 12.5px;
+        text-align : center;
+        vertical-align : center;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        box-shadow: 0px -20px 20px 20px #20202020;
+    }
+
+    #splashLogoLarge {
+        display : none;
+    }
+    #splashLogoMedium {
+        display : block;
+    }
+    #dateContainer {
+        font-size : 28px;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bioteknikdagarna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/BTD logga 2.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    height:56px;
+    background-color:black;
+    color:white;
+    float:top;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    
+}
+.navbaritem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+ float:left;
+ vertical-align: middle;
+  
+    
+}
+@media screen and (max-width: 1200px) {
+  .navbaritem {
+    display: none;
+  }
+}
+.navbaritem:hover {
+  background-color: white;
+  color:black;
+  border-bottom: 5px solid white;
+}
+.navmenu{
+    position:relative;
+    background-color:white;
+    color:black;
+    float:right;
+    font-size:18px!important;
+    height:56px!important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    
+   display: inherit;
+    
+  }
+}
+.navmenu:hover {
+  background-color: lightgray;
+}
+.navmenuitem{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align:left;
+  text-decoration: none;
+  display: none;
+  font-size: 3vw;
+ float:left;
+ width:100%;
+}
+@media screen and (max-width: 1200px) {
+  .navmenuitem {
+    
+   display: inherit;
+    font-size: 20px;
+  }
+}
+.navmenuitem:hover {
+  background-color: white;
+  color:black;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+
+  <div class="w3-bar navbar">
+    <a class="navmenu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="navbaritem " style="display: inherit;">Hem</a>
+	<a href="nyheter.html" class="navbaritem">Information</a>
+	<a href="schema.html" class="navbaritem">Schema</a>
+    <a href="foretag.html" class="navbaritem">Företag</a>
+    <a href="forelasare.html" class="navbaritem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navbaritem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navbaritem ">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navbaritem">Om oss</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-large" style="position:fixed; top:56px;width:100%;overflow:hidden;z-index:2">
+	<a href="nyheter.html" class="navmenuitem">Information</a>
+	<a href="schema.html" class="navmenuitem">Schema</a>
+    <a href="foretag-mobil.html" class="navmenuitem">Företag</a>
+    <a href="forelasare.html" class="navmenuitem">Föreläsare</a>
+    <a href="hittailinkoping.html" class="navmenuitem">Hitta i Linköping</a>
+	<a href="studentlivilkpg.html" class="navmenuitem">Studentliv i Linköping</a>
+	<a href="omoss.html" class="navmenuitem">Om oss</a>
+  </div>
+<div class="w3-container" style="height:56px">
+
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3center">
+      <h1>Föreläsare</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-main w3-content w3-center">
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row">
+		<div style="padding-top-15%" class="w3-container">
+      <h1 class="w3-text-green">Hannah Fremlén och Oliver Hild Walett från LiU iGEM 2019</h1>
+	  <h4>10:00 - 10:30</h4>
+	  
+	    <div class="w3-container">
+<p> <img src="img/Igem2019.png" style="width:100%" class="w3-center"></p>    
+</div>
+
+      <h5><br>“The goal of our project is to functionalize a cellulose wound dressing with antimicrobial agents to help fight infections. […] Later, when the bandage comes in contact with thrombin in the blood, the antimicrobial agents will be activated. This is a result of thrombin cutting a linker between the agents and the carbohydrate binding domain.”   </h5><h9>Dereference: Liu iGEM 2019, Project Description (2019), 2019.igem.org/Team:Linkoping_Sweden [2021-10-25] </h9><h5><br>
+<a style="color:green" href="https://2019.igem.org/Team:Linkoping_Sweden">Mer Info</a>
+ </h5>
+    </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+		<div class="w3-row">
+		<div style="padding-top-15%" class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Emma Björk</h1>
+	  <h4>10:45 - 11:15</h4>
+      <h5>"Min forskning fokuserar på utveckling av nanoporösa material och att förstå hur materialets bildningsprocess påverkar materialets egenskaper. Materialen används bland annat inom läkemedelstransport, sensorer och katalys."
+<br><br>
+<a style="color:green" href="https://liu.se/en/employee/emmjo89">Mer Info</a>
+ </h5>
+    </div>
+    <div class="w3-third w3-container">
+<p> <img src="img/Emmabjork.png" style="width:100%" class="w3-center"></p>    
+</div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+	<div class="w3-row">
+   <div class="w3-third w3-container">
+      <p> <img src="img/Gunnarcedersund.png" style="width:100%" class="w3-center"></p>
+    </div>
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Gunnar Cedersund
+</h1>
+<h4>11:30 - 12:00</h4>
+      <h5>“Jag utvecklar digitala tvillingar: datormodeller som beskriver celler, organ och hela kroppen. Dessa tvillingar är användbara för eHälsa, läkemedelsutveckling, grundforskning, ersättning av försöksdjur och konstnärliga uttryck.” 
+      <br><br>
+<a style="color:green" href="https://liu.se/medarbetare/gunce57">Mer Info</a></h5>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+  <div class="w3-row w3-light-grey w3-padding-64">
+  <div class="w3-third w3-container">
+     <p> <br><br><img src="img/Danielaili.png" style="width:100%" class="w3-center"></p>
+    </div>
+  <div class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Daniel Aili</h1>
+	  <h4>13:30 - 14:00</h4>
+      <h5>”Tänk om vi kunde tillverka nanometersmå byggstenar som spontant byggde ihop sig till komplicerade strukturer och användbara material, bara genom att blanda dem i ett provrör!<br><br> Detta tillverkningssätt, som påminner om hur många av de material som återfinns i naturen bildas, kallas självassociation och ger oss fantastiska möjligheter att skapa konstgjorda nanostrukturerade material med många spännande egenskaper. Min forskning handlar om hur vi kan utnyttja självassociation för att framställa avancerade nanostrukturer, molekylära komplex och nya material för en rad olika biomedicinska tillämpningar."
+<br><br>
+<a style="color:green" href="https://liu.se/en/employee/danai11">Mer Info</a>
+ </h5>
+    </div>
+    
+  </div>
+
+
+<!--
+  <div class="w3-row">
+   <div style="padding-top:15%;" class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Ulf Ellervik </h1>
+	  <h4>13:30-14:15</h4>
+      <p>...Är professor på Lunds Universitet och föreläser inom kemi. Han har dessutom skrivit ett antal böcker inom ämnet, varit sommarpratare i P1, gjort en serie på UR Play och deltagit i Skavlan. Under lördagen kommer han inspirera med sin föreläsning om Ond kemi. </p>
+    </div>
+	<div class="w3-third w3-container">
+<p> <img src="img/ulf.png" style="width:100%" class="w3-center">Fotograf: Freddy Billquist</p>    </div>
+  </div>
+      
+   <div class="w3-row w3-light-grey w3-padding-64">
+        <div class="w3-third w3-container">
+				
+		</div>
+			<div  class="w3-twothird w3-container">
+				<h1 class="w3-text-teal">Eva Nordberg Karlsson</h1>
+				<h4>14:30-15:00</h4>
+				<p> Professor inom bioteknik och forskar bland annat om kolhydratmodifierande enzymer och termofila och värmestabila enzymer. Hon har även jobbat med projektet ProSeaFood: Innovativ bearbetning av tång. </p>
+			</div>
+ 
+  </div>
+  -->
+  
+  </div>
+  
+  
+  
+  
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <!-- <div class="w3-xlarge w3-padding-32">
+	<a href ="https://www.facebook.com/bioteknikdagarna/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ -->
+<img class="w3-hide-small"style="width:50%" src="../img/footer logga.png">
+ 
+ <img class="w3-hide-large w3-hide-medium" style="width:100%" src="../img/footer logga.png">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
