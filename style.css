@@ -75,6 +75,16 @@ nav h1 {
     align-items: center;
 }
 
+/* .speccontainer {
+    width: 100%;
+    background-color: inherit;
+    background-image: url("images/repeatbak.png");
+    background-size: 35px;
+    background-repeat: repeat-x;
+    background-position: left;
+} */
+
+
 .container {
     width: 100%;
     max-width: 900px;
@@ -156,10 +166,6 @@ p {
 
 .desc {
     padding: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* text-align: center; */
 }
 
 .desc li:not(:last-child) {
@@ -237,7 +243,7 @@ footer a {
 
 
 @media screen and (max-width: 700px) {
-    
+
     nav {
         flex-direction: column;
     }
@@ -258,7 +264,7 @@ footer a {
         order: -1;
         width: 355px;
         height: 236.66px;
-        object-fit: cover;   
+        object-fit: cover;
     }
 
     .box .groupimg {
