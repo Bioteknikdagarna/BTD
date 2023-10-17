@@ -121,6 +121,14 @@ h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
+h4 {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
 p {
     margin: 0;
     font-size: 1em;
@@ -162,6 +170,7 @@ p {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
 
 
 .desc {
