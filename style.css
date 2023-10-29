@@ -75,16 +75,6 @@ nav h1 {
     align-items: center;
 }
 
-/* .speccontainer {
-    width: 100%;
-    background-color: inherit;
-    background-image: url("images/repeatbak.png");
-    background-size: 35px;
-    background-repeat: repeat-x;
-    background-position: left;
-} */
-
-
 .container {
     width: 100%;
     max-width: 900px;
@@ -146,6 +136,12 @@ p {
 
 
 .gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-wrapper2 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 10px;
@@ -259,6 +255,10 @@ footer a {
 
     .gallery-wrapper {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-wrapper2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
     .grid {
