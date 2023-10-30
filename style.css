@@ -271,8 +271,8 @@ footer a {
 
     .box img {
         order: -1;
-        width: 355px;
-        height: 236.66px;
+        /* width: 355px;
+        height: 236.66px; */
         object-fit: cover;
     }
 
