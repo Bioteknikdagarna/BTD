@@ -1,7 +1,7 @@
 # Hemsida För BTD
 Du får gärna bjuda in dig själv (ditt privata konto) till organisationen [BTD](https://github.com/Bioteknikdagarna) när du ska arbeta med hemsidan. Det gör du genom att logga in DesignWebbBTD-kontot. Om du inte har något privat konto, och inte vill skapa något eget, kan du såklart använda dig av DesignWebb-kontot.
 
-Jag har kopierat min sida till `_old/2023` så det är fritt fram att modifera filerna som ligger utanför `_old/` som du vill (understrecket betyder "ignorera", alltså att det inte ska synas på https://bioteknikdagarna.org/). Antingen kan du skapa nya filer från grunden, eller bara redigera de befintliga.
+Jag har kopierat min sida till `_old/2023` så det är fritt fram att modifera filerna som ligger utanför `_old/` som du vill (understrecket betyder "ignorera", alltså att det inte ska synas på https://bioteknikdagarna.org/) förutom `README.md` and `CNAME`. Antingen kan du skapa nya filer från grunden, eller bara redigera de befintliga.
 
 ## Instruktioner
 För att utveckla klickar du på `clone` här på sidan, använd git clone och inte `download as zip`. Öppna sen mappen i valfri editor.
