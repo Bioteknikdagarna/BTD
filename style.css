@@ -1,8 +1,8 @@
 :root {
-    --maintheme: #189BCC;
-    --nav: #13698A;
+    --maintheme: #9EC4EA;
+    --nav: #189BCC;
     --background: #f2f2f2;
-    --heading: #fff;
+    --heading: #9EC4EA;
     --theme: #dbede2;
 }
 
@@ -88,6 +88,11 @@ img {
     height: auto;
 }
 
+img_hd {
+    max-width: auto;
+    max-height: 0.01fr;
+}
+
 h1 {
     text-align: center;
     margin: 0;
@@ -149,7 +154,7 @@ p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 20px;
 }
 
