@@ -14,22 +14,13 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<header>
-  <div class="navbar">
-    <nav class="container nav-container">
-      <a href="."><img class="image_header" src="images/BTD_logga.png" alt="Bild på BTD2024-loggan" ></a>
-      <ul>
-        <li><a href=".">Start</a></li>
-        <li><a href="schema.html">Schema</a></li>
-        <li><a href="event.html"  class="selected">Event</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="gäster.html">Gäster</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="hitta.html">Hitta rätt</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<style>
+  nav li a#event {
+  background-color: var(--nav);
+  }
+</style>
+
+<div id="header"></div> 
 
 <script
     src="https://code.jquery.com/jquery-3.3.1.js"

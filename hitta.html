@@ -14,6 +14,12 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
+<style>
+  nav li a#hitta {
+  background-color: var(--nav);
+  }
+</style>
+
 <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -26,22 +32,8 @@ $(function(){
 });
 </script>
 
-<header>
-  <div class="navbar">
-    <nav class="container nav-container">
-      <a href="."><img class="image_header" src="images/BTD_logga.png" alt="Bild på BTD2024-loggan" ></a>
-      <ul>
-        <li><a href=".">Start</a></li>
-        <li><a href="schema.html">Schema</a></li>
-        <li><a href="event.html"  >Event</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="gäster.html" >Gäster</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="hitta.html" class="selected">Hitta rätt</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<div id="header"></div> 
+
 
 <body>
     <div class="gigacontainer">
