@@ -45,12 +45,17 @@ nav ul {
     height: 100%;
 }
 
+nav li {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
 
 nav li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 24px;
+    padding: 24px 24px;
     text-decoration: none;
 }
 
@@ -86,13 +91,29 @@ nav h1 {
     margin: 0 auto;
 }
 
+.full_height {
+    max-height: 100%;
+    background-color: inherit;
+}
+
+.container.nav-container {
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 .image_header {
-    max-height: 100px;
+    height: 85px;
+    max-width: 100%;
     padding: 10px, 10px;
 }
 
@@ -263,6 +284,57 @@ footer a.img {
     margin: auto;
 }
 
+.counter {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 140px;
+    display: flex;
+}
+
+.countdown-timestamp {
+    display: none;
+}
+
+.counter-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 110px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    display: flex;
+}
+
+.number {
+    margin-bottom: 15px;
+    font-size: 34px;
+    line-height: 1;
+}
+
+.counter-text {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    order: -1;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    position: relative;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, .3);
+}
 
 @media screen and (max-width: 700px) {
 

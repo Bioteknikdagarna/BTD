@@ -29,66 +29,23 @@ $(function(){
 </script>
 
 <header>
-  <nav>
-    <div>
+  <div class="navbar">
+    <nav class="container nav-container">
       <a href="."><img class="image_header" src="images/BTD_logga.png" alt="Bild på BTD2024-loggan" ></a>
-    </div>
-    <ul>
-      <li><a href="." class="selected">Start</a></li>
-      <li><a href="schema.html">Schema</a></li>
-      <li><a href="event.html">Event</a></li>
-      <li><a href="information.html">Information</a></li>
-      <li><a href="gäster.html">Gäster</a></li>
-      <li><a href="omoss.html">Om oss</a></li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="." class="selected">Start</a></li>
+        <li><a href="schema.html">Schema</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="gäster.html">Gäster</a></li>
+        <li><a href="omoss.html">Om oss</a></li>
+        <li><a href="hitta.html">Hitta rätt</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <body>
-  
-  <div id="countdown" class="counter">
-    <div id="countdown-timestamp" class="countdown-timestamp">May 17 2024 23:59:59</div>
-    <div class="counter-wrap">
-      <div id="days" class="number">4</div>
-      <div class="counter-text">Dagar</div>
-    </div>
-    <div class="counter-wrap">
-      <div id="hours" class="number">9</div>
-      <div class="counter-text">Timmar</div>
-    </div>
-    <div class="counter-wrap">
-      <div id="minutes" class="number">3</div>
-      <div class="counter-text">Minuter</div>
-    </div>
-    <div class="counter-wrap">
-      <div id="seconds" class="number">45</div>
-      <div class="counter-text">Sekunder</div>
-    </div>
-    <div class="html-embed-3 w-embed w-script">
-      <script>
-        const second = 1000,
-              minute = second * 60,
-              hour = minute * 60,
-              day = hour * 24;
-        const countdownParent = document.querySelector('#countdown');
-        const timestamp = countdownParent.querySelector('#countdown-timestamp').innerText;
-        let countDown = new Date(timestamp).getTime(),
-            x = setInterval(function() {
-              let now = new Date().getTime();
-              let distance = countDown - now;
-              document.getElementById('days').innerText = Math.floor(distance / (day));
-              document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
-              document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
-              document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-              //do something later when date is reached
-              if (distance < 0) {
-                  countdownParent.style.display = "none";
-              }
-            }, second)
-      </script>
-    </div>
-  </div>
-
   <div class="gigacontainer">
     <div class="container">
 
