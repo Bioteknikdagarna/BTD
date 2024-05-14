@@ -289,9 +289,11 @@ footer a.img {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 90vw;
     height: 100%;
     min-height: 140px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .countdown-timestamp {
