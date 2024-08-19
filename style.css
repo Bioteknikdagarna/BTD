@@ -183,6 +183,12 @@ p {
     grid-gap: 10px;
 }
 
+.gallery-wrapper-foot {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
