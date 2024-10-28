@@ -2,7 +2,6 @@
 <html lang="sv">
 
 <head>
-  <meta name="google-site-verification" content="rXVtDybNrRCy7OFAKLeD8ypsx6I7Bvc16F-xbJvepEY" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,72 +27,83 @@ $(function(){
 });
 </script>
 
-<style>
-  nav li a#start {
-  background-color: var(--nav);
-  }
-</style>
-
-<div id="header"></div> 
-
 <body>
-  <div class="gigacontainer">
+
+  <div class="space"></div>
+
+  <div class="gigacontainer heading">
     <div class="container">
-
-      <h2> Varmt välkomna till Uppsala den 14 - 16 november!</h2>
-
-      <div class="box theme">
-        <div class="groupimg">
-          <img src="images/sequencing.jpg" alt="Bild på sekvensering av DNA">
-          <img src="images/agar.jpg" alt="Bild på agarplattor">
-        </div>
-        <div class="desc">
-          <h3>Vad är Bioteknikdagarna?</h3>
-          <p>Bioteknikdagarna, som ofta förkortas BTD, är ett event för bioteknikstudenterna i Sverige. Det arrangeras
-            årligen i något
-            av lärosätena där utbildningen finns, vilket alltså är i
-            Uppsala, Linköping, Umeå, Göteborg, Stockholm eller Lund. I år är det Uppsalas tur!
-            <br> <br>
-            Under dagarna bjuds totalt 180 studenter in till inspirerande föreläsningar, studiebesök, workshops och en
-            arbetsmarknadsmässa,
-            främst inom bioteknik men även andra naturvetenskapliga områden. 
-            Det ges möjlighet att knyta kontakter med företag och på så vis få en insikt i vad man kan göra som
-            biotekniker men också träffa studenter från de andra lärosätena. Dessutom händer det mycket roligt under
-            kvällarna där man får chansen att ta
-            del av varandras studentliv och dess traditioner.
-          </p>
-        </div>
-      </div>
-      <div class="space"></div>
-
-      <div class="box theme">
-        <div class="desc">
-          <h3>Uppsala och UU</h3>
-          <p>
-            Uppsala är Sveriges fjärde största stad och har funnnits sedan början av 1200-talet då den hette Östra Aros, vilket betyder "östra åmynningen". 
-            Namnet Uppsala kommer från ärkebiskopssätet som låg i ett samhälle norr om byn Sala, båda dessa är numera stadsdelar i stan (Gamla Uppsala och Sala Backe).
-
-            <br> <br>
-            Uppsala universitet (UU) är ett av två universitet i staden det står som värd för årets upplaga av
-            Bioteknikdagarna. UU består av flera campus utspridda i staden och även ett på Gotland.
-            X-programmet (civilingenjör i molekylär bioteknik) håller till på tre olika av dessa campus, Ångströmslaboratoriet, biomedicinskt centrum (BMC) samt Evolutionsbiologiskt centrum (EBC).
-            Programmet har funnnits sedan 1993 och firade alltså 30-årsjubileum häromåret!
-          </p>
-        </div>
-        <div class="groupimg">
-          <img src="images/domkyrkan.jpg" alt="Bild på Domkyrkan">
-          <img src="images/angstrom.jpg" alt="Bild på Ångströmslaboratoriet">
-        </div>
-
-
+      <div class="grid">
+        <div> </div>
+        <img src="images/BTD_logga.png" alt="Bild på BTD2024-loggan">
+        <div> </div>
       </div>
 
     </div>
+  </div>
+
+  <div class="gigacontainer">
+    <div class="container">
+
+      <div class="space"></div>
+
+      <h2> Varmt välkomna till Uppsala den 14 - 16 november</h2>
+
+      <div id="countdown" class="counter">
+        <div id="countdown-timestamp" class="countdown-timestamp">November 13 2024 23:59:59</div>
+        <div class="counter-wrap">
+          <div id="days" class="number">0</div>
+          <div class="counter-text">Dagar</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="hours" class="number">0</div>
+          <div class="counter-text">Timmar</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="minutes" class="number">0</div>
+          <div class="counter-text">Minuter</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="seconds" class="number">0</div>
+          <div class="counter-text">Sekunder</div>
+        </div>
+        <div class="html-embed-3 w-embed w-script">
+          <script>
+            const second = 1000,
+                  minute = second * 60,
+                  hour = minute * 60,
+                  day = hour * 24;
+            const countdownParent = document.querySelector('#countdown');
+            const timestamp = countdownParent.querySelector('#countdown-timestamp').innerText;
+            let countDown = new Date(timestamp).getTime(),
+                x = setInterval(function() {
+                  let now = new Date().getTime();
+                  let distance = countDown - now;
+                  document.getElementById('days').innerText = Math.floor(distance / (day));
+                  document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
+                  document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
+                  document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+                  //do something later when date is reached
+                  if (distance < 0) {
+                      countdownParent.style.display = "none";
+                  }
+                }, second)
+          </script>
+        </div>
+      </div>
+      
+
+      <h2>Mer information kommer inom kort</h2>
+
+    </div>
+
+
 
   </div>
-  
+
 </body>
 
 <div id="footer"></div> 
+
 
 </html>
