@@ -30,7 +30,15 @@ $(function(){
   nav li a#gäster {
   background-color: var(--nav);
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
 </style>
+
+
 
 <div id="header"></div> 
 
@@ -39,7 +47,7 @@ $(function(){
   <div class="gigacontainer">
 
     <div class="container">
-
+      <!--
       <h2>Föreläsare</h2>
 
       <div class="gallery-wrapper2">
@@ -48,12 +56,6 @@ $(function(){
           <img src="images/johanbengtssonpalme.jpeg" alt="Bild på Johan Bengtsson-Palme" width="600" height="400">
           <div class="desc">
             <h4>Johan Bengtsson-Palme</h4>
-            <!-- Johan är forskarassisten på Chalmers vid institutionen Systembiologi och forskar mestadels på mikrobiologi
-            och
-            mikrobiell ekologi, däribland
-            antibiotikaresistens. Han kommer prata om hur han i sin forskning försöker ta reda på vad som gör vissa
-            bakterier till "elaka"
-            patogener och andra till "goda" samspelare med oss människor. -->
 
             Johan är forskarassisten på Chalmers vid institutionen "Systembiologi" och beskriver sin föreläsning såhär:
             <br><br>
@@ -69,10 +71,6 @@ $(function(){
           <img src="images/EllenAndreasson2.jpg" alt="Bild på Ellen Andréassion" width="600" height="400">
           <div class="desc">
             <h4>Ellen Andréasson</h4>
-            <!-- Från teknikfördomar till finalist i Microsoft's utmärkelse "Årets Tech-Tjej 2021" och VD för ett mångprisat
-            Life Science tech-startup.
-            Följ med på en personlig resa om att bryta barriärer, läsa till civilingenjör i Bioteknik på Chalmers,
-            ideella engagemang och driva ett startup. -->
 
             Ellen är alumn från bioteknikprogrammet på Chalmers och beskriver sin föreläsning såhär:
             <br><br>
@@ -127,24 +125,48 @@ $(function(){
             modifiering för att skapa cellfabriker som kan producera kemikalier på ett mer hållbart sätt än tidigare.
           </div>
         </div>
-
+        
 
       </div>
-
-      <h2> Företag </h2>
+    -->
+      <h2> Utställare på Genvägen</h2>
       <div class="grid">
+        <div class="gallery theme">
+          <img src="images/Arocell.png" alt="Bild på arocells logga">
+          <div class="desc">
+            <h3>Arocell</h3>
+            <p> AroCell är ett svenskt diagnostikföretag som arbetar med diagnostiska tester inom onkologi och bakteriologi.
+              Med en organisation som täcker hela värdekedjan från forskning och utveckling till tillverkning och marknadsföring, har AroCell flexibiliteten som ett litet företag men egenskaper som en stor organisation. 
+              Vår vision är att förbättra diagnostiken av onkologiska och bakteriella sjukdomar genom att erbjuda tester som är både kliniskt användbara och ekonomiskt hållbara. 
+              Vår produktportfölj består av snabbtester samt tester för automatiserade plattformar. 
+              Testerna inom onkologi är baserade på biomarkörer vilket innebär att testerna är icke-invasiva och kostnadseffektiva. 
+              Några av de cancerformer vi kan detektera med våra tester är urinblåsecancer, prostatacancer samt bröstcancer. 
+              Inom bakteriologi har vi ett test för tyfoidfeber.</p>
+          </div>
+        </div>
 
         <div class="gallery theme">
-          <img src="images/retein.png" alt="Bild på Reteins logga">
+          <img src="images/Randstad.png" alt="Bild på Randstads logga">
           <div class="desc">
-            <h3>Retein</h3>
-            <p> Our novel technology enables precise and sustainable recovery of valuable resources from water,
-              including the clean water itself. We adapt Nature's finest separation (cell membrane channel proteins) for
-              use in the recovery of high-purity resources like clean water and lithium, from any accessible water. Our
-              patented biomimetic molecular separation technology was developed at Chalmers University of Technology
-              with the purpose of accelerating the transition towards a resource-efficient and sustainable world from
-              the bottom up. We transform the supply of resources, enabling convenient access to sustainably sourced
-              high-quality materials and in doing so, we reimagine a material-optimized world.</p>
+            <h3>Randstad</h3>
+            <p> Randstad Life Sciences är specialiserade inom kompetensområdet naturvetenskap och är en 
+              del av Randstad, som med verksamhet i 38 länder är världsledande inom rekrytering och 
+              konsultuthyrning. Genom detta globala nätverk och i kombination med en stark lokal 
+              förankring kan vi erbjuda ett stort utbud av varierande och utvecklande uppdrag och tjänster 
+              för dig som är specialist inom inom life science. Vår mission är att med din karriär i fokus 
+              hjälpa dig att uppnå din fulla potential!
+              </p>
+          </div>
+        </div>
+
+        <div class="gallery theme">
+          <img src="images/NorthX.png" alt="Bild på NorthX logga">
+          <div class="desc">
+            <h3>NorthX</h3>
+            <p> NorthX Biologics is a Contract Development and Manufacturing Organization that offer services and support in the development and manufacturing of biologics used in vaccines, gene/cell therapy and other advanced applications. 
+              We have a long tradition of biopharmaceutical manufacturing and have been manufacturing GMP biologics since 1992. 
+              In 2021 we were recognized as a national innovation hub for advanced therapeutics and vaccines and have expanded our development capabilities to serve our clients. 
+              This includes a new development organization with cutting edge laboratories and technologies.</p>
           </div>
         </div>
 
@@ -163,72 +185,41 @@ $(function(){
           </div>
         </div>
 
+      </div>
+      <div class="space"></div>
+      <div class="grid4">
         <div class="gallery theme">
-          <img src="images/astra.png" alt="Bild på Astra Zenecas logga">
+          <img src="images/xsektionen.png" alt="Bild på X-sektionens logga">
           <div class="desc">
-            <h3>Astra Zeneca</h3>
-            <p> AstraZeneca är ett globalt, innovationsdrivet bioläkemedelsföretag med fokus på forskning, utveckling
-              och marknadsföring av receptbelagda läkemedel. Vår verksamhet - att forska fram nya läkemedel - betyder
-              mycket för många människor och för samhället. Med över 90 000 anställda i fler än 100 länder arbetar vi
-              med att flytta fram gränserna för forskning för att ta fram läkemedel som förändrar liv. I Sverige har vi
-              ca 8000 anställda, där 2/3 arbetar vid en av världens största tillverkningsenheter för läkemedel i
-              Södertälje och 1/3 av dem arbetar vid vår globala forskningsanläggning i Göteborg. Vår forskningsenhet i
-              Göteborg är ett av våra tre globala strategiska forskningscentra. Här har vi kompetens inom alla områden
-              av läkemedelsutveckling; från idé till färdig produkt för kliniska prövningar. Fokus ligger på
-              sjukdomsområdena kardiovaskulära-, metabola- och njursjukdomar och sjukdomar inom andningsvägarna och
-              immunologi. Forskarna i Göteborg samarbetar med ledande akademiska centra, partners och forskningsnätverk
-              över hela världen.</p>
-          </div>
-        </div>
-
-
-        <div class="gallery theme">
-          <img src="images/foi.png" alt="Bild på FOIs logga">
-          <div class="desc">
-            <h3>FOI</h3>
-            <p>FOI forskar för en säkrare värld. Så lyder vår vision som vi arbetar för att uppnå i allt vi gör. FOI,
-              Totalförsvarets forskningsinstitut, är ett av Europas ledande forskningsinstitut inom försvar och
-              säkerhet.
-              <br><br>
-              Inom FOI forskar vi kring säkerhet på alla samhällsnivåer - nationellt, regionalt och lokalt. Vi skapar,
-              värnar och förmedlar relevant och integritetskritisk kunskap. FOI:s kunskap är dessutom efterfrågad
-              internationellt och vi leder flera EU-projekt. FOI ska vara den främsta kunskapskällan för ökad förmåga
-              och förnyelsekraft i totalförsvaret.
-              <br><br>
-              Vi stärker Sveriges säkerhet nu och i framtiden genom kunskapsuppbyggande verksamhet och i mer
-              kunskapstillämpande verksamhet. FOI är kunskapsbärare och expertstöd inom försvar och säkerhet.
+            <h3>X-sektionen</h3>
+            <p> Sektionen för civilingenjörer inom molekylär bioteknik
             </p>
           </div>
         </div>
-
         <div class="gallery theme">
-          <img src="images/nyctea.png" alt="Bild på Nyctea Technologies logga">
+          <img src="images/ksektionen.png" alt="Bild på K-sektionens logga">
           <div class="desc">
-            <h3>Nyctea Technologies</h3>
-            <p>Nyctea is a biotechnology company that commercializes new solutions for processing of biopharmaceuticals
-              for improved productivity. The company is based on multiple inventions, made at Chalmers, that enable
-              purification of biomolecules on surfaces by electric signals. Chromatography, the existing method of
-              purification requires chemicals to achieve separation. Our product replaces problematic chemicals from the
-              process, giving the customer faster production, higher yield. Our mission is to create a world with
-              affordable biomedicine.
+            <h3>K-sektionen</h3>
+            <p> Sektionen för civilingenjörer inom Kemiteknik
             </p>
           </div>
         </div>
-
         <div class="gallery theme">
-          <img src="images/biohub.png" alt="Bild på BioVentureHub">
+          <img src="images/UTN1.png" alt="Bild på UTNs logga">
           <div class="desc">
-            <h3>BioVentureHub</h3>
-            <p>
-              AstraZenecas BioVentureHub i Mölndal är ett öppet ekosystem för innovation som finns för att stärka
-              konkurrenskraften och dynamiken i life science-industrin. Det är ett sorts biotekniskt nav där 28 företag
-              och tre akademiska grupper inom LifeScience har samlats. Fem av dessa kommer att delta under mässan Genvägen:
-              Scantox, Cline Scientific, CII NanoSIMS, Lucero och Nyctea Technologies.
+            <h3>UTN</h3>
+            <p> Uppsalas Teknolog- och Naturvetarkår
             </p>
           </div>
         </div>
-
-
+        <div class="gallery theme">
+          <img src="images/igem.png" alt="Bild på igems logga">
+          <div class="desc">
+            <h3>Igem</h3>
+            <p> Igem väldigt kort beskrivning här
+            </p>
+          </div>
+        </div>
 
       </div>
 
