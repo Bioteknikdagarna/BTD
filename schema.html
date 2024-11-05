@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="sv">
 
+<script>function focusEvent( element) {
+  if (element.classList.contains("active")) return null;
+  
+  element.classList.add( "active")
+}
+
+function unfocusEvent( element) {
+  if (element) element.classList.remove( "active");
+  else return null;
+}
+
+function clickCatcher( event) {
+  document.querySelectorAll(".timeBlock.active").forEach( function(element) {
+      if (element == event.target ) return null;
+      else if (element.contains( event.target)) return null;
+      else unfocusEvent( element);
+  });
+}
+
+document.addEventListener("click", clickCatcher)
+</script>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,30 +59,688 @@ $(function(){
 <body>
 
   <div class="gigacontainer">
+    <div id='SchedulePageContainer'>
+      <div id='ScheduleContainerBox' class='primary accent'>
+          <div id='timeStampsColumn'>
+              <div class='dayColumnHeader'>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      07:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      08:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      09:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      10:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      11:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      12:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      13:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      14:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      15:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      16:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      17:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      18:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      19:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      20:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      21:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      22:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      23:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      24:00
+                  </h4>
+              </div>
+              <div class='timeStampRow'>
+                  <h4>
+                      01:00
+                  </h4>
+              </div>
+          </div>
+          <div class='dayColumn'>
+              <div class='dayColumnHeader accent'>
+                  <h3>
+                      Torsdag
+                  </h3>
+              </div>
+              <div class='dayColumnBlockContainer'>
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Eva Von Bahr' eventName='Introduktion' startTime=(12, 0) stopTime=(13, 0) style='top : 28.869%; bottom : 65.867%; left : 10.000%; right : 0.000%;'>
+                      <h3>
+                          Introduktion
+                      </h3>
+                      <h4>
+                          Eva Von Bahr
+                      </h4>
+                      <p class="info">
+                          12:00 - 13:00
+                      </p>
+                      <p>
+                          
+                      </p>
+                  </div>
 
-    <div class="container">
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångströmslaboratoriet' eventName='Genvägen' startTime=(13, 15) stopTime=(15, 45) style='top : 35.449%; bottom : 51.391%; left : 10.000%; right : 60.000%;'>
+                      <h3>
+                          Genvägen
+                      </h3>
+                      <h4>
+                          Ångströmslaboratoriet
+                      </h4>
+                      <p class="info">
+                          13:15 - 15:45
+                      </p>
+                      <p class="info">
+                      </p>
+                  </div>
 
-      <h2>Bioteknikdagarna hålls 14 - 16 november</h2>
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångströmslaboratoriet' eventName='Rundvandring' startTime=(13, 15) stopTime=(15, 45) style='top : 35.449%; bottom : 51.391%; left : 40.000%; right : 30.000%;'>
+                    <h3>
+                        Rundvandring
+                    </h3>
+                    <h4>
+                        Ångströmslaboratoriet
+                    </h4>
+                    <p class="info">
+                        13:15 - 15:45
+                    </p>
+                    <p class="info">
+                    </p>
+                  </div>
 
-      <div class="gallery desc theme">
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångströmslaboratoriet' eventName='Lära Känna' startTime=(13, 15) stopTime=(15, 45) style='top : 35.449%; bottom : 51.391%; left : 70.000%; right : 0.000%;'>
+                    <h3>
+                        Lära Känna
+                    </h3>
+                    <h4>
+                        Ångströmslaboratoriet
+                    </h4>
+                    <p class="info">
+                        13:15 - 15:45
+                    </p>
+                    <p class="info">
+                    </p>
+                  </div>
 
-        <p class="centerp">Använd pilarna i övre vänstra hörnet för att ändra vecka. Lägg gärna till denna
-          google-kalender i din egen genom att trycka på plusset i nedre högra
-          hörnet. </p>
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångströmslaboratoriet' eventName='Utdelning Middag' startTime=(15, 45) stopTime=(16, 15) style='top : 48.609%; bottom : 48.759%; left : 10.000%; right : 0.000%;'>
+                      <h3>
+                          Utdelning Middag
+                      </h3>
+                      <h4>
+                          Ångströmslaboratoriet
+                      </h4>
+                      <p class="info">
+                          15:45 - 16:15
+                      </p>
+                      <p class="info">
+                          
+                      </p>
+                  </div>
 
+                  <div class='timeBlock accent' onclick='focusEvent(this);' location='Fyrishov/City Hostel' eventName='Incheckning boende + Middag' startTime=(16, 15) stopTime=(18, 00) style='top : 51.241%; bottom : 39.547%; left : 10.000%; right : 0.000%;'>
+                    <h3>
+                        Incheckning boende + Middag
+                    </h3>
+                    <h4>
+                        Fyrishov/City Hostel
+                    </h4>
+                    <p class="info">
+                        16:15 - 18:00
+                    </p>
+                    <p class="info">
+                        
+                    </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Uppsalas Nationer' eventName='Nationsrunda' startTime=(18, 00) stopTime=(21, 30) style='top : 60.453%; bottom : 21.124%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Nationsrunda
+                  </h3>
+                  <h4>
+                      Uppsalas Nationer
+                  </h4>
+                  <p class="info">
+                      18:00 - 21:30
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Stockholms nation' eventName='Klubb' startTime=(21, 30) stopTime=(25, 00) style='top : 78.876%; bottom : 2.7%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Klubb
+                  </h3>
+                  <h4>
+                      Stockholms Nation
+                  </h4>
+                  <p class="info">
+                      21:30 - 01:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+                  <div class='hourDivider' style='top : 2.55%;'> <!--7-->
+                  </div>
+                  <div class='hourDivider' style='top : 7.814%;'> <!--8-->
+                  </div>
+                  <div class='hourDivider' style='top : 13.078%;'> <!--9-->
+                  </div>
+                  <div class='hourDivider' style='top : 18.342%;'> <!--10-->
+                  </div>
+                  <div class='hourDivider' style='top : 23.606%;'> <!--11-->
+                  </div>
+                  <div class='hourDivider' style='top : 28.869%;'> <!--12-->
+                  </div>
+                  <div class='hourDivider' style='top : 34.133%;'> <!--13-->
+                  </div>
+                  <div class='hourDivider' style='top : 39.397%;'> <!--14-->
+                  </div>
+                  <div class='hourDivider' style='top : 44.661%;'> <!--15-->
+                  </div>
+                  <div class='hourDivider' style='top : 49.925%;'> <!--16-->
+                  </div>
+                  <div class='hourDivider' style='top : 55.189%;'> <!--17-->
+                  </div>
+                  <div class='hourDivider' style='top : 60.453%;'> <!--18-->
+                  </div>
+                  <div class='hourDivider' style='top : 65.717%;'> <!--19-->
+                  </div>
+                  <div class='hourDivider' style='top : 70.981%;'> <!--20-->
+                  </div>
+                  <div class='hourDivider' style='top : 76.244%;'> <!--21-->
+                  </div>
+                  <div class='hourDivider' style='top : 81.508%;'> <!--22-->
+                  </div>
+                  <div class='hourDivider' style='top : 86.772%;'> <!--23-->
+                  </div>
+                  <div class='hourDivider' style='top : 92.036%;'> <!--24-->
+                  </div>
+                  <div class='hourDivider' style='top : 97.3%;'> <!--01-->
+                  </div>
+              </div>
+          </div>
+          <div class='dayDivider'>
+          </div>
+          <div class='dayColumn'>
+              <div class='dayColumnHeader accent'>
+                  <h3>
+                      Fredag
+                  </h3>
+              </div>
+              <div class='dayColumnBlockContainer'>
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Fyrishov/City Hostel' eventName='Frukostpåse' startTime=(7, 30) stopTime=(8, 15) style='top : 5.182%; bottom : 90.87%; left : 10.000%; right : 45.000%;'>
+                  <h3>
+                      Frukostpåse
+                  </h3>
+                  <h4>
+                      Fyrishov/City Hostel
+                  </h4>
+                  <p class="info">
+                      07:30 - 08:15
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Kollektivtrafik' eventName='Transport till studiebesök' startTime=(8, 15) stopTime=(9, 00) style='top : 9.13%; bottom : 86.922%; left : 10.000%; right : 45.000%;'>
+                  <h3>
+                      Transport till studiebesök
+                  </h3>
+                  <h4>
+                      Kollektivtrafik
+                  </h4>
+                  <p class="info">
+                      08:15 - 09:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Uppsala Business Park' eventName='Studiebesök' startTime=(9, 00) stopTime=(11, 30) style='top : 13.078%; bottom : 73.762%; left : 10.000%; right : 45.000%;'>
+                  <h3>
+                      Studiebesök
+                  </h3>
+                  <h4>
+                      Uppsala Business Park
+                  </h4>
+                  <p class="info">
+                      09:00 - 11:30
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Fyrishov/City Hostel' eventName='Checka ut' startTime=(7, 00) stopTime=(9, 00) style='top : 2.55%; bottom : 86.922%; left : 55.000%; right : 0.000%;'>
+                  <h3>
+                      Checka ut
+                  </h3>
+                  <h4>
+                      Fyrishov/City Hostel
+                  </h4>
+                  <p class="info">
+                      07:00 - 09:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Frukost' startTime=(9, 00) stopTime=(10, 00) style='top : 13.078%; bottom : 81.658%; left : 55.000%; right : 0.000%;'>
+                  <h3>
+                      Frukost
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      09:00 - 10:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Aktivitet' startTime=(10, 00) stopTime=(12, 00) style='top : 18.342%; bottom : 71.131%; left : 55.000%; right : 0.000%;'>
+                  <h3>
+                      Aktivitet
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      10:00 - 12:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Lunchföreläsning' startTime=(12, 00) stopTime=(13, 00) style='top : 28.869%; bottom : 65.867%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Lunchföreläsning
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      12:00 - 13:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Workshop' startTime=(13, 00) stopTime=(14, 00) style='top : 34.133%; bottom : 60.603%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Workshop
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      13:00 - 14:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Inspirationsföreläsning' startTime=(14, 00) stopTime=(15, 00) style='top : 39.397%; bottom : 55.339%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Inspirationsföreläsning
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      14:00 - 15:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Kapellgärdet' eventName='Hemlig Aktivitet' startTime=(17, 00) stopTime=(18, 30) style='top : 55.189%; bottom : 36.915%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Hemlig Aktivitet
+                  </h3>
+                  <h4>
+                      Kapellgärdet
+                  </h4>
+                  <p class="info">
+                      17:00 - 18:30
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Bridgens Hus' eventName='Fulsittning' startTime=(18, 30) stopTime=(22, 00) style='top : 63.085%; bottom : 18.492%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Fulsittning
+                  </h3>
+                  <h4>
+                      Bridgens Hus
+                  </h4>
+                  <p class="info">
+                      18:30 - 22:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Värmlands Nation' eventName='Släpp på Nation' startTime=(22, 00) stopTime=(25, 00) style='top : 81.508%; bottom : 2.7%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Släpp på nation
+                  </h3>
+                  <h4>
+                      Värmlands Nation
+                  </h4>
+                  <p class="info">
+                      22:00 - 01:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='hourDivider' style='top : 2.55%;'> <!--7-->
+                </div>
+                <div class='hourDivider' style='top : 7.814%;'> <!--8-->
+                </div>
+                <div class='hourDivider' style='top : 13.078%;'> <!--9-->
+                </div>
+                <div class='hourDivider' style='top : 18.342%;'> <!--10-->
+                </div>
+                <div class='hourDivider' style='top : 23.606%;'> <!--11-->
+                </div>
+                <div class='hourDivider' style='top : 28.869%;'> <!--12-->
+                </div>
+                <div class='hourDivider' style='top : 34.133%;'> <!--13-->
+                </div>
+                <div class='hourDivider' style='top : 39.397%;'> <!--14-->
+                </div>
+                <div class='hourDivider' style='top : 44.661%;'> <!--15-->
+                </div>
+                <div class='hourDivider' style='top : 49.925%;'> <!--16-->
+                </div>
+                <div class='hourDivider' style='top : 55.189%;'> <!--17-->
+                </div>
+                <div class='hourDivider' style='top : 60.453%;'> <!--18-->
+                </div>
+                <div class='hourDivider' style='top : 65.717%;'> <!--19-->
+                </div>
+                <div class='hourDivider' style='top : 70.981%;'> <!--20-->
+                </div>
+                <div class='hourDivider' style='top : 76.244%;'> <!--21-->
+                </div>
+                <div class='hourDivider' style='top : 81.508%;'> <!--22-->
+                </div>
+                <div class='hourDivider' style='top : 86.772%;'> <!--23-->
+                </div>
+                <div class='hourDivider' style='top : 92.036%;'> <!--24-->
+                </div>
+                <div class='hourDivider' style='top : 97.3%;'> <!--01-->
+                </div>
+              </div>
+          </div>
+          <div class='dayDivider'>
+          </div>
+          <div class='dayColumn'>
+              <div class='dayColumnHeader accent'>
+                  <h3>
+                      Lördag
+                  </h3>
+              </div>
+              <div class='dayColumnBlockContainer'>
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Frukost' startTime=(9, 30) stopTime=(10, 30) style='top : 15.71%; bottom : 79.026%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Frukost
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      09:30 - 10:30
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='Inspirationsföreläsning' startTime=(11, 00) stopTime=(11, 45) style='top : 23.606%; bottom : 72.447%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Inspirationsföreläsning
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      11:00 - 11:45
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Ångström' eventName='BTS-möte + Lunch' startTime=(12, 00) stopTime=(13, 00) style='top : 28.869%; bottom : 65.867%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      BTS-möte + Lunch
+                  </h3>
+                  <h4>
+                      Ångström
+                  </h4>
+                  <p class="info">
+                      12:00 - 13:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Östgöta Nation' eventName='Finsittning' startTime=(17, 00) stopTime=(22, 00) style='top : 55.189%; bottom : 18.492%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Finsittning
+                  </h3>
+                  <h4>
+                      Östgöta Nation
+                  </h4>
+                  <p class="info">
+                      17dk - 22:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+
+                <div class='timeBlock accent' onclick='focusEvent(this);' location='Östgöta Nation' eventName='Släpp' startTime=(22, 00) stopTime=(25, 00) style='top : 81.508%; bottom : 2.7%; left : 10.000%; right : 0.000%;'>
+                  <h3>
+                      Släpp
+                  </h3>
+                  <h4>
+                      Östgöta Nation
+                  </h4>
+                  <p class="info">
+                      22:00 - 01:00
+                  </p>
+                  <p class="info">
+                      
+                  </p>
+                </div>
+                <div class='hourDivider' style='top : 2.55%;'> <!--7-->
+                </div>
+                <div class='hourDivider' style='top : 7.814%;'> <!--8-->
+                </div>
+                <div class='hourDivider' style='top : 13.078%;'> <!--9-->
+                </div>
+                <div class='hourDivider' style='top : 18.342%;'> <!--10-->
+                </div>
+                <div class='hourDivider' style='top : 23.606%;'> <!--11-->
+                </div>
+                <div class='hourDivider' style='top : 28.869%;'> <!--12-->
+                </div>
+                <div class='hourDivider' style='top : 34.133%;'> <!--13-->
+                </div>
+                <div class='hourDivider' style='top : 39.397%;'> <!--14-->
+                </div>
+                <div class='hourDivider' style='top : 44.661%;'> <!--15-->
+                </div>
+                <div class='hourDivider' style='top : 49.925%;'> <!--16-->
+                </div>
+                <div class='hourDivider' style='top : 55.189%;'> <!--17-->
+                </div>
+                <div class='hourDivider' style='top : 60.453%;'> <!--18-->
+                </div>
+                <div class='hourDivider' style='top : 65.717%;'> <!--19-->
+                </div>
+                <div class='hourDivider' style='top : 70.981%;'> <!--20-->
+                </div>
+                <div class='hourDivider' style='top : 76.244%;'> <!--21-->
+                </div>
+                <div class='hourDivider' style='top : 81.508%;'> <!--22-->
+                </div>
+                <div class='hourDivider' style='top : 86.772%;'> <!--23-->
+                </div>
+                <div class='hourDivider' style='top : 92.036%;'> <!--24-->
+                </div>
+                <div class='hourDivider' style='top : 97.3%;'> <!--01-->
+                </div>
+              </div>
+          </div>
+          <div class='dayColumn'>
+            <div class='dayColumnHeader accent'>
+                <h3>
+                    Söndag
+                </h3>
+                
+            </div>
+            <div class='dayColumnBlockContainer'>
+              <div class='timeBlock accent' onclick='focusEvent(this);' location='Nannaskolan' eventName='Frukost' startTime=(9, 30) stopTime=(10, 30) style='top : 15.71%; bottom : 79.026%; left : 10.000%; right : 0.000%;'>
+                <h3>
+                    Frukost
+                </h3>
+                <h4>
+                    Nannaskolan
+                </h4>
+                <p class="info">
+                    09:30 - 10:30
+                </p>
+                <p class="info">
+                    
+                </p>
+              </div>
+
+              <div class='hourDivider' style='top : 2.55%;'> <!--7-->
+              </div>
+              <div class='hourDivider' style='top : 7.814%;'> <!--8-->
+              </div>
+              <div class='hourDivider' style='top : 13.078%;'> <!--9-->
+              </div>
+              <div class='hourDivider' style='top : 18.342%;'> <!--10-->
+              </div>
+              <div class='hourDivider' style='top : 23.606%;'> <!--11-->
+              </div>
+              <div class='hourDivider' style='top : 28.869%;'> <!--12-->
+              </div>
+              <div class='hourDivider' style='top : 34.133%;'> <!--13-->
+              </div>
+              <div class='hourDivider' style='top : 39.397%;'> <!--14-->
+              </div>
+              <div class='hourDivider' style='top : 44.661%;'> <!--15-->
+              </div>
+              <div class='hourDivider' style='top : 49.925%;'> <!--16-->
+              </div>
+              <div class='hourDivider' style='top : 55.189%;'> <!--17-->
+              </div>
+              <div class='hourDivider' style='top : 60.453%;'> <!--18-->
+              </div>
+              <div class='hourDivider' style='top : 65.717%;'> <!--19-->
+              </div>
+              <div class='hourDivider' style='top : 70.981%;'> <!--20-->
+              </div>
+              <div class='hourDivider' style='top : 76.244%;'> <!--21-->
+              </div>
+              <div class='hourDivider' style='top : 81.508%;'> <!--22-->
+              </div>
+              <div class='hourDivider' style='top : 86.772%;'> <!--23-->
+              </div>
+              <div class='hourDivider' style='top : 92.036%;'> <!--24-->
+              </div>
+              <div class='hourDivider' style='top : 97.3%;'> <!--01-->
+              </div>  
+            </div>
+          </div>
       </div>
-
-      <div class="space"></div>
-
-      <div class="googleCalendar">
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FStockholm&mode=WEEK&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showNav=1&showTitle=0&showDate=0&src=bbd2c42e32b15fd91928dcfaba8fedce076ecad2d9d2cc9aab5f5caf2a5c857d%40group.calendar.google.com&ctz=UTC&color=%237CB342"
-          width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-
-      <div class="space"></div>
-
     </div>
+
+    
 
   </div>
 
