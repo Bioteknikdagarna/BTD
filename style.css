@@ -446,7 +446,7 @@ footer a.img {
 
 #ScheduleContainerBox {
     height : 90%;
-    max-width : 100vh;
+    max-width : 130vh;
     margin : 0 auto;
     display : flex;
     flex-direction: row;
@@ -464,7 +464,7 @@ footer a.img {
     display : flex;
     justify-content : center;
     flex-direction : column;
-    color : #7fd15ca0;
+    color : black;
     vertical-align: middle;
 }
 .timeStampRow > h4 {
@@ -485,7 +485,7 @@ footer a.img {
     line-height : 4vh;
     font-size : 2vh;
     text-align : center;
-    color : #7fd15ca0;
+    color : black;
     border-radius: 5px;
     display : flex;
     flex-direction: column;
@@ -508,7 +508,7 @@ footer a.img {
     position : absolute;
     left : -2.5px;
     right : -2.5px;
-    height : 2px;
+    height : 1px;
     color: black;
 }
 
@@ -524,22 +524,22 @@ footer a.img {
     /* color: rgb(239, 255, 239); */
 }
 .timeBlock:nth-of-type(2n+1) {
-    color : #7fd15c;
-    background-color : #509350;
-    box-shadow : 0 0 3px #509350a0;
+    color : black;
+    background-color : #189BCC;
+    box-shadow : 0 0 3px #189BCCa0;
 }
 .timeBlock:nth-of-type(2n+1).active {
-    background-color : #509350;
-    box-shadow : 0 0 3px #509350;
+    background-color : #189BCC;
+    box-shadow : 0 0 3px #189BCCf0;
 }
 .timeBlock:nth-of-type(2n) {
-    color : #3a693a;
-    background-color : #7fd15c;
-    box-shadow : 0 0 3px #7fd15ca0;
+    color : #000000;
+    background-color : #9EC4EA;
+    box-shadow : 0 0 3px #9EC4EAa0;
 }
 .timeBlock:nth-of-type(2n).active {
-    background-color : #7fd15c;
-    box-shadow : 0 0 3px #7fd15c;
+    background-color : #9EC4EA;
+    box-shadow : 0 0 3px #9EC4EA;
 }
 .timeBlock:not(.active):hover {
     filter: brightness(1.2);
