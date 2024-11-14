@@ -341,7 +341,21 @@ footer a.img {
     height : 180vh;
 }
 
+#SchedulePageContainer_small {
+    width : 100%;
+    height : 180vh;
+}
+
 #ScheduleContainerBox {
+    height : 90%;
+    max-width : 80vw;
+    margin : 0 auto;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#ScheduleContainerBox_small{
     height : 90%;
     max-width : 80vw;
     margin : 0 auto;
@@ -371,12 +385,43 @@ footer a.img {
     font-size : 1.5vh;
 }
 
+.timeStampRow_small {
+    flex-grow: 1;
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    color : black;
+    vertical-align: middle;
+}
+
+.timeStampRow_small > h4 {
+    margin : 0;
+    padding : 0;
+    text-align: left;
+    font-size : 1.5vh;
+}
+
 .dayColumn {
     flex-grow: 2;
     display : flex;
     flex-direction: column;
     justify-content : space-evenly;
 }
+
+.dayColumn_small {
+    flex-grow: 2;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-evenly;
+}
+
+.dayColumn_big {
+    flex-grow: 2;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-evenly;
+}
+
 .dayColumnHeader {
     height : 6vh;
     line-height : 4vh;
@@ -389,6 +434,20 @@ footer a.img {
     justify-content: center;
     margin-bottom : 15px;
 }
+
+.dayColumnHeader_small{
+    height : 6vh;
+    line-height : 4vh;
+    font-size : 2vh;
+    text-align : center;
+    color : black;
+    border-radius: 5px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+
 .dayColumnBlockContainer {
     position : relative;
     width : 100%;
@@ -685,11 +744,31 @@ nav li a {
         display: none;
     }
 
+    .dayColumn_big {
+        display: none;
+    }
+
 
 }
 
 @media screen and (min-width: 960px) {
     .small_screen {
+        display: none;
+    }
+    .dayColumnHeader_small {
+        display: none;
+    }
+    .timeStampRow_small {
+        display: none;
+    }
+    .dayColumn_small {
+        display: none;
+    }
+    #ScheduleContainerBox_small{
+        display: none;
+    }
+
+    #SchedulePageContainer_small {
         display: none;
     }
 }
