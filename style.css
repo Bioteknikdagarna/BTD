@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Poppins:wght@400;500&display=swap');
 :root {
     --maintheme: #0b3d2e;
     --nav: #0b3d2e;
@@ -10,7 +11,7 @@
 body {
     background-color: var(--maintheme);
     color: rgb(0, 0, 0);
-    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+   font-family: "Poppins", sans-serif;
     font-size: 1em;
     margin: 0px;
     padding: 0px;
@@ -70,7 +71,8 @@ h2 {
     margin: 0;
     padding: 1em;
     font-size: 1.8em;
-    font-family: 'Georgia Pro Black', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+   font-family: "League Spartan", sans-serif;
+    font-weight: 600;
 }
 
 h3 {
@@ -78,7 +80,8 @@ h3 {
     margin: 0;
     padding: 1em;
     font-size: 1.3em;
-    font-family: 'Georgia Pro Black', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "League Spartan", sans-serif;
+font-weight: 600;
 }
 
 h4 {
@@ -86,7 +89,8 @@ h4 {
     margin: 0;
     padding: 1em;
     font-size: 1.1em;
-    font-family: 'Georgia Pro Black', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+   font-family: "League Spartan", sans-serif;
+font-weight: 600;
 }
 
 p {
