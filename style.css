@@ -1,9 +1,9 @@
 :root {
-    --maintheme: #9EC4EA;
-    --nav: #189BCC;
+    --maintheme: #0b3d2e;
+    --nav: #0b3d2e;
     --background: #f2f2f2;
-    --heading: #9EC4EA;
-    --theme: #edb1b160;
+    --heading: #0b3d2e;
+    --theme: #cfe8ff;
     scroll-behavior: smooth
 }
 
