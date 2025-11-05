@@ -127,34 +127,16 @@ $(function(){
 
       <h2>Runt i Lund</h2>
 
-      <div class="grid">
-        <!--
-        <div class="gallery theme">
-          <img src="images/temp3.png" alt="Bild på cyklar" width="600" height="400">
-          <div class="desc">
-            <h3>Cykel</h3>
-            <p> Cykeln är Uppsalastudenternas bästa vän och primära transportmedel, 
-              det finns några få ställen i Uppsala där det går att hyra cyklar över dagen om ni tror att ni behöver det. 
-              Dessa hittar ni <a href=https://destinationuppsala.se/activities/cykla-uppsala/ target="_blank"> här</a>, 
-              men antagligen kommer ni ta er runt på andra sätt.
-            </p>
-          </div>
-        </div>
-     <div class="box theme"
-     style="display:flex; align-items:center; gap:40px; padding:30px;">
+<div class="box theme" style="display:grid; grid-template-columns: 1fr 3fr; align-items:center;">
 
- <div class="box theme"
-     style="display:grid; grid-template-columns: 1fr 3fr; align-items:center; min-height:220px;">
-
-  <!-- Bildkolumn (vänster, vit bakgrund som hos stiftelsen) -->
-  <div class="logocontainer"
-       style="background:#fff; display:flex; align-items:center; justify-content:center; padding:20px;">
+  <!-- Vänster: vit panel med logga -->
+  <div class="logocontainer" style="background:#fff; display:flex; justify-content:center; align-items:center; padding:20px;">
     <img src="images/Ska.png" alt="Skånetrafiken"
          style="max-width:260px; max-height:160px; width:100%; height:auto; object-fit:contain; display:block;">
   </div>
 
-  <!-- Textkolumn (höger, blå panel – samma som stiftelsen) -->
-  <div class="desc" style="grid-column:auto; padding:20px;">
+
+  <div class="desc theme" style="padding:20px 24px;">
     <p>
       För att ta sig runt i Lund kan man promenera, cykla eller åka buss/spårvagn.
       Om ni köper en biljett i Skånetrafikens app är det ett stort tips att köpa biljett tillsammans,
@@ -162,15 +144,17 @@ $(function(){
       <br><br>
       Från Polhemsskolan är det inte långt att gå till Lund C där man kan ta spårvagnen till KC.
       Då går man antingen av vid hållplatsen LTH eller Ideontorget. Man kan även ta bussen från
-      Polhemsskolan till KC. Då går man på vid hållplatsen Idrottsplatsen och går av vid Ridhuset.
-      Bor man på Winstrup Hostel kan man också promenera till Lund C och därifrån ta spårvagnen.
-      Från Place Lund och Hemvärnsgården är det lättast att promenera till KC.
+      Polhemsskolan till KC (påstig Idrottsplatsen, avstig Ridhuset). Bor man på Winstrup Hostel
+      kan man också promenera till Lund C och därifrån ta spårvagnen. Från Place Lund och
+      Hemvärnsgården är det lättast att promenera till KC.
       <br><br>
       Man kan även hyra Lundahoj eller elsparkcyklar, t.ex. Voi, Bolt, Dott och Ryde.
     </p>
   </div>
+
 </div>
 <div class="space"></div>
+
       
     
 </body>
