@@ -88,8 +88,6 @@ $(function(){
       </div>
       
 
-      
-
 
       <div class="box theme">
         <div class="groupimg">
@@ -182,9 +180,74 @@ Medan du fokuserar på dina studier, fokuserar vi på dig. Bli medlem idag: <a
         </div>
       </div>
       <div class="space"> </div>
+      <!--
+      <div class="box theme" style="grid-template-columns: repeat(4, minmax(0, 1fr))">
+  <div class="desc" style="grid-column: 1 / 4";>
+   PolyPeptide är en av världens största oberoende kontraktstillverkare av terapeutiska peptider för läkemedel och kosmetika. PolyPeptide är representerade i Frankrike, Belgien, Indien, Sverige samt USA och sysselsätter ca 1 400 medarbetare. Koncernen är börsnoterad i Schweiz och tillverkar mer än en tredjedel av alla godkända peptidläkemedelssubstanser i världen.
+
+På PolyPeptide hittar du en kultur formad av människor som bryr sig – om sitt arbete, sina kollegor och skillnaden de gör. Vi arbetar nära över team och gränser, och kombinerar olika perspektiv i en öppen och samarbetande miljö. Det som för oss samman är en gemensam tro på värdet av vårt arbete och den påverkan det har på andra. Den känslan av mening är något vi alla bidrar till och växer av varje dag.
+
+  </div>
+  <div class="logocontainer">
+    <a href="https://www.polypeptide.com/" class="img">
+      <img src="images/Poly.png" alt="Polypeptide bild">
+    </a> --> 
+  </div>
+</div> 
+<div class="space"> </div>
+
+
+   </div>
+    <div class="gigacontainer">
+      <div class="container">
+      <div class="space"></div>
+
+      <h2> Hoppas ni är taggade på BTD 2026!!</h2>
+
+      <div id="countdown" class="counter">
+        <div id="countdown-timestamp" class="countdown-timestamp">November 4 2026 23:59:59</div>
+        <div class="counter-wrap">
+          <div id="days" class="number">0</div>
+          <div class="counter-text">Dagar</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="hours" class="number">0</div>
+          <div class="counter-text">Timmar</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="minutes" class="number">0</div>
+          <div class="counter-text">Minuter</div>
+        </div>
+        <div class="counter-wrap">
+          <div id="seconds" class="number">0</div>
+          <div class="counter-text">Sekunder</div>
+        </div>
+        <div class="html-embed-3 w-embed w-script">
+          <script>
+            const second = 1000,
+                  minute = second * 60,
+                  hour = minute * 60,
+                  day = hour * 24;
+            const countdownParent = document.querySelector('#countdown');
+            const timestamp = countdownParent.querySelector('#countdown-timestamp').innerText;
+            let countDown = new Date(timestamp).getTime(),
+                x = setInterval(function() {
+                  let now = new Date().getTime();
+                  let distance = countDown - now;
+                  document.getElementById('days').innerText = Math.floor(distance / (day));
+                  document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
+                  document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
+                  document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+                  //do something later when date is reached
+                  if (distance < 0) {
+                      countdownParent.style.display = "none";
+                  }
+                }, second)
+          </script>
+        </div>
       </div>
-   
-      <div class="space"></div> 
+      
+
       <h2>Vi ses snart i Stockholm! </h2>
 
     </div>
